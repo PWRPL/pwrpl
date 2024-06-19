@@ -31,7 +31,7 @@ namespace pwrpl_tools
     class pwrpltools
     {
         public const string _PWR_nazwaprogramu = "pwrpl-tools";
-        public const string _PWR_wersjaprogramu = "v.2.02";
+        public const string _PWR_wersjaprogramu = "v.2.03";
         public const string _PWR_rokwydaniawersji = "2024";
 
         internal readonly static bool wylacz_calkowitepokazywaniepostepow = true; //ustawienie na true przyspiesza operacje w KonsoliGUI (zaimplementowane w operacjach nr. 1, 2, 101)
@@ -344,6 +344,7 @@ namespace pwrpl_tools
             Console.WriteLine("2000. [JSON] Weryfikacja istnienia par nawiasów klamrowych {} w każdym stringu w pliku JSON.");
             Console.WriteLine("2001. [stringsTransifexCOM.txt->stringsTransifexCOM.txt] Oznaczenie linii do cofnięcia zatwierdzenia na platformie Transifex na podstawie podanego zakresu ich identyfikatorów.");
             Console.WriteLine("2002. [2xJSON->JSON] Przeniesienie treści stringów ze źródłowego pliku JSON według szablonu do nowego pliku JSON.");
+            Console.WriteLine("2003. [stringsTransifex.com.TXT(origEN)+stringsTransifex.com.TXT(częściowo przetłumaczony na PL)->1xstringsTransifex.com.TXT] Przeniesienie treści stringów ze źródłowego pliku TXT do nowego pliku TXT oraz usunięcie treści stringów nieprzetłumaczonych.");
             Console.WriteLine("--------------EKSPERYMENTALNE[PWR_PL]----------");
             Console.WriteLine("9000. [JSON] Wczytywanie danych z pliku JSON.");
             Console.WriteLine("9001. [JSON] Znajdowanie indeksu konkretnego klucza w liście kluczy i stringów.");
@@ -472,6 +473,10 @@ namespace pwrpl_tools
                 else if (numer_operacji_int == 2002)
                 {
                     JSONplusJSONtoJSON_PrzeniesienieStringowWedlugSzablonu();
+                }
+                else if (numer_operacji_int == 2003)
+                {
+                    stringsTransifexCOMTXT_PorownanieEnORIGzCzesciowoPrzetlumaczonymNaPLorazUsuniecieTresciNieprzetlumaczonychStringow();
                 }
                 else if (numer_operacji_int == 9000)
                 {

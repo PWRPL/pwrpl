@@ -741,6 +741,127 @@ namespace pwrpl_tools
         }
 
 
+        public static void stringsTransifexCOMTXT_PorownanieEnORIGzCzesciowoPrzetlumaczonymNaPLorazUsuniecieTresciNieprzetlumaczonychStringow()
+        {
+            Console.Write("Podaj nazwę pliku stringsTransifexCOMTXT, który zawiera oryginalną angielską lokalizację: ");
+            string txtORIGen_nazwa = Console.ReadLine();
+            
+            Console.WriteLine("Podaj nazwę pliku stringsTransifexCOMTXT, który jest częściowo przetłumaczony na język polski: ");
+            string txtCzesciowoPrzetlumaczonyPL_nazwa = Console.ReadLine();
+
+            string txtNowyPlik_nazwa = "NOWY_" + txtCzesciowoPrzetlumaczonyPL_nazwa;
+            
+            if (File.Exists(txtORIGen_nazwa) == true && File.Exists(txtCzesciowoPrzetlumaczonyPL_nazwa) == true)
+            {
+                List<string> linie_txtORIGen = new List<string>();
+                List<string> linie_txtCzesciowoPrzetlumaczonyPL = new List<string>();
+                List<string> linie_txtNowyPlik = new List<string>();
+
+                FileStream txtORIGen_fs = new FileStream(txtORIGen_nazwa, FileMode.Open, FileAccess.Read);
+
+                try
+                {
+                    StreamReader txtORIGen_sr = new StreamReader(txtORIGen_fs);
+
+                    while (txtORIGen_sr.Peek() != -1)
+                    {
+                        string txtORIGen_trescaktualnejlinii = txtORIGen_sr.ReadLine();
+                        
+                        linie_txtORIGen.Add(txtORIGen_trescaktualnejlinii);
+                    }
+                    
+                    txtORIGen_sr.Close();
+                    
+                }
+                catch
+                {
+                    Blad("BŁĄD: Wystąpił nieoczekiwany problem z dostępem do pliku: " + txtORIGen_nazwa);
+                }
+
+                txtORIGen_fs.Close();
+
+                
+                
+
+                FileStream txtCzesciowoPrzetlumaczonyPL_fs = new FileStream(txtCzesciowoPrzetlumaczonyPL_nazwa, FileMode.Open, FileAccess.Read);
+                
+                try
+                {
+                    StreamReader txtCzesciowoPrzetlumaczonyPL_sr = new StreamReader(txtCzesciowoPrzetlumaczonyPL_fs);
+
+                    while (txtCzesciowoPrzetlumaczonyPL_sr.Peek() != -1)
+                    {
+                        string txtCzesciowoPrzetlumaczonyPL_trescaktualnejlinii = txtCzesciowoPrzetlumaczonyPL_sr.ReadLine();
+                        
+                        linie_txtCzesciowoPrzetlumaczonyPL.Add(txtCzesciowoPrzetlumaczonyPL_trescaktualnejlinii);
+                    }
+                    
+                    txtCzesciowoPrzetlumaczonyPL_sr.Close();
+                    
+                }
+                catch
+                {
+                    Blad("BŁĄD: Wystąpił nieoczekiwany problem z dostępem do pliku: " + txtORIGen_nazwa);
+                }
+
+                txtORIGen_fs.Close();
+
+
+
+                if (linie_txtORIGen.Count == linie_txtCzesciowoPrzetlumaczonyPL.Count)
+                {
+                    if (File.Exists(txtNowyPlik_nazwa) == true) { File.Delete(txtNowyPlik_nazwa); }
+                    
+                    FileStream txtNowyPlik_fs = new FileStream(txtNowyPlik_nazwa, FileMode.CreateNew, FileAccess.Write);
+
+                    try
+                    {
+                        StreamWriter txtNowyPlik_sw = new StreamWriter(txtNowyPlik_fs);
+
+                        for (int il = 0; il < linie_txtORIGen.Count; il++)
+                        {
+                            if (linie_txtORIGen[il] != linie_txtCzesciowoPrzetlumaczonyPL[il])
+                            {
+                                txtNowyPlik_sw.WriteLine(linie_txtCzesciowoPrzetlumaczonyPL[il]);
+                            }
+                            else
+                            {
+                                txtNowyPlik_sw.WriteLine("TŁUMACZENIE_DO_USUNIĘCIA"); //pusta linia
+                            }
+
+                        }
+
+                        txtNowyPlik_sw.Close();
+                    }
+                    catch
+                    {
+                        Blad("BŁĄD: Wystąpił nieoczekiwany problem z dostępem do pliku: " + txtNowyPlik_nazwa);
+                    }
+
+                    txtNowyPlik_fs.Close();
+
+
+                    if (File.Exists(txtNowyPlik_nazwa) == true)
+                    {
+                        Sukces("Utworzono nowy plik: " + txtNowyPlik_nazwa);
+                    }
+
+                }
+                else
+                {
+                    Blad($"BŁĄD: Pliki \"{txtORIGen_nazwa}\" i \"{txtCzesciowoPrzetlumaczonyPL_nazwa}\" mają różną ilość linii");
+                }
+                
+
+            }
+            else
+            {
+                Blad("Nie istnieje przynajmniej jeden z podanych plików.");
+            }
+        }
+        
+        
+        
         //V1
 
         public static void JSONtoTXT()
