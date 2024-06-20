@@ -29,8 +29,10 @@ namespace pwrpl;
 public partial class MainWindow : Window
 {
     public const string _PWR_nazwaprogramu = "pwrpl";
-    public const string _PWR_wersjaprogramu = "v.0.1c";
+    public const string _PWR_wersjaprogramu = "v.0.1d";
     public const string _PWR_rokwydaniawersji = "2024";
+
+    public static readonly string pwrpl_katalogglownyprogramu = Directory.GetCurrentDirectory();
 
     public readonly static char sc = System.IO.Path.DirectorySeparatorChar;
     
@@ -445,17 +447,19 @@ public partial class MainWindow : Window
 
     private void Menu_wyodrebnijpliki_plikiTXTiJSON_OnClick(object? sender, RoutedEventArgs e)
     {
-        Console.WriteLine("[DEBUG] Wejście w: Menu_wyodrebnijpliki_plikiTXTiJSON_OnClick");
+        #if DEBUG
+            Console.WriteLine("[DEBUG] Wejście w: Menu_wyodrebnijpliki_plikiTXTiJSON_OnClick");
+        #endif
         
-        MessageBox_wyodrebnijplikiTXTiJSON();
+        OknoKomunikatu_wyodrebnijplikiTXTiJSON();
     }
     
     
     
     
-    private async void MessageBox_wyodrebnijplikiTXTiJSON()
+    private async void OknoKomunikatu_wyodrebnijplikiTXTiJSON()
     {
-        Komunikat.Okno.Otworz("Wyodrębnianie plików", "Czy chcesz wyodrębnić pliki?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijPlikiTXTiJSON);
+        Komunikat.Okno.Otworz("Wyodrębnianie plików *.txt i *.json do podfolderu", "Wszystkie pliki .txt i .json zostaną wyodrębnione z katalogu programu do nowego podkatalogu. Tym samym przestaną być widoczne przez narzędzia.\nCzy chcesz wykonać tę operację?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijPlikiTXTiJSON);
     }
 }
 
