@@ -8,18 +8,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pwrpl/Wiadomosc/Okno.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pwrpl/Wiadomosc/Okno.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/avalonia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/pwrpl-tools/PWR_PL.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/pwrpl-tools/PWR_PL.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/pwrpl-tools/pwrpltools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/pwrpl-tools/pwrpltools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/App.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/Chmura/Linki.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/Chmura/Linki.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/KonsolaGUI/konsola.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/KonsolaGUI/konsola.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/931d907712eb4f0898abccccf85775a06b600/63/834ac486/AbstractMessageBoxParams.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/931d907712eb4f0898abccccf85775a06b600/9e/df5bf162/MessageBoxManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ed351abe393b71b2c97541855ec377cadae1726238e574b4206d40a9b5821d/FontFamily.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pwrpl/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -33,19 +48,20 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Project.pwrpl.executor&quot;: &quot;Run&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Publish to folder.Linux x64.executor&quot;: &quot;Run&quot;,
     &quot;Publish to folder.Windows x64.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/revok/Revok-projekty/C#/pwrpl&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/revok/Pobrane/MessageBox.Avalonia-master/MsBox.Avalonia&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -56,7 +72,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Publish to folder.Windows x64">
+  <component name="RunManager" selected=".NET Project.pwrpl">
     <configuration name="Linux x64" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" include_native_libs_for_self_extract="true" platform="Any CPU" produce_single_file="true" runtime="linux-x64" self_contained="true" target_folder="$PROJECT_DIR$/pwrpl/bin/Release_publish/net8.0/pwrpl_linux_x64" target_framework="net8.0" uuid_high="-6841087475231342556" uuid_low="-5852692912941996323" />
       <method v="2" />
@@ -104,6 +120,14 @@
       <workItem from="1718693014114" duration="406000" />
       <workItem from="1718697814109" duration="140000" />
       <workItem from="1718761017855" duration="2898000" />
+      <workItem from="1718765407967" duration="84000" />
+      <workItem from="1718805807243" duration="6495000" />
+      <workItem from="1718812317065" duration="199000" />
+      <workItem from="1718812614211" duration="67000" />
+      <workItem from="1718812687369" duration="2150000" />
+      <workItem from="1718814848814" duration="562000" />
+      <workItem from="1718889767002" duration="120000" />
+      <workItem from="1718890632380" duration="5471000" />
     </task>
     <task id="LOCAL-00001" summary="v.0.1">
       <option name="closed" value="true" />
@@ -129,7 +153,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718482191406</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v.0.1b">
+      <option name="closed" value="true" />
+      <created>1718764442213</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718764442213</updated>
+    </task>
+    <task id="LOCAL-00005" summary="v.0.1b">
+      <option name="closed" value="true" />
+      <created>1718764495237</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718764495237</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +180,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="v.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v.0.1" />
+    <MESSAGE value="v.0.1b" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.0.1b" />
   </component>
 </project>

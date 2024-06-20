@@ -4,7 +4,12 @@
     <option name="projectPerEditor">
       <map>
         <entry key="pwrpl/App.axaml" value="pwrpl/pwrpl.csproj" />
+        <entry key="pwrpl/KonsolaGUI/konsola.axaml" value="pwrpl/pwrpl.csproj" />
         <entry key="pwrpl/MainWindow.axaml" value="pwrpl/pwrpl.csproj" />
+        <entry key="pwrpl/MessageBox.axaml" value="pwrpl/pwrpl.csproj" />
+        <entry key="pwrpl/MsBox.Avalonia/Controls/MsBoxCustomView.axaml" value="pwrpl/pwrpl.csproj" />
+        <entry key="pwrpl/MsBox.Avalonia/Windows/MsBoxWindow.axaml" value="pwrpl/pwrpl.csproj" />
+        <entry key="pwrpl/Wiadomosc/Okno.axaml" value="pwrpl/pwrpl.csproj" />
       </map>
     </option>
   </component>

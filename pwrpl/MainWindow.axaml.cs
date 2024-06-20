@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls;
@@ -20,6 +21,7 @@ using Avalonia.Styling;
 using JSON;
 using Newtonsoft.Json.Linq;
 using pwrpl.Identyfikacja;
+using pwrpl.Komunikat;
 
 namespace pwrpl;
 
@@ -27,12 +29,13 @@ namespace pwrpl;
 public partial class MainWindow : Window
 {
     public const string _PWR_nazwaprogramu = "pwrpl";
-    public const string _PWR_wersjaprogramu = "v.0.1b";
+    public const string _PWR_wersjaprogramu = "v.0.1c";
     public const string _PWR_rokwydaniawersji = "2024";
 
     public readonly static char sc = System.IO.Path.DirectorySeparatorChar;
     
-    public readonly static string cfg_skalowanie_plikpath = APPDATA($"pwrpl{sc}domyslne{sc}skalowanie.cfg");
+    public readonly static string cfg_skalowanie_plikpath = APPDATA($"pwrpl{sc}{_PWR_wersjaprogramu}{sc}domyslne{sc}skalowanie.cfg");
+    public static double skalowanie_mnoznikskali_aktualny = 1.0d;
     
     public static List<Kontrolka> kontrolki_lista = new List<Kontrolka>();
     
@@ -49,7 +52,7 @@ public partial class MainWindow : Window
         
         InitializeComponent();
         
-
+        
         //this.Opened += (_, _) => SkalowanieInterfejsu(1.5d);
 
         
@@ -87,6 +90,8 @@ public partial class MainWindow : Window
     
     private void SkalowanieInterfejsu(double mnoznik_skali)
     {
+        skalowanie_mnoznikskali_aktualny = mnoznik_skali;
+        
         //pobieranie domyślnych ustawień skalowania (100%) z pliku konfiguracyjnego
         if (File.Exists(cfg_skalowanie_plikpath) == true)
         {
@@ -283,15 +288,19 @@ public partial class MainWindow : Window
     {
         KonsolaGUI.Console.Inicjalizacja();
     }
-
+    
     
     private void MainWindow_OnClosing(object? sender, WindowClosingEventArgs e)
     {
         #if DEBUG
-            if (File.Exists(cfg_skalowanie_plikpath) == true) { File.Delete(APPDATA($"pwrpl{sc}domyslne{sc}skalowanie.cfg")); }
+            if (File.Exists(cfg_skalowanie_plikpath) == true) { File.Delete(cfg_skalowanie_plikpath); }
         #endif
+
+        if (konsolaGUI_osobnywatek != null)
+        {
+            if (konsolaGUI_osobnywatek.IsAlive == true) { konsolaGUI_osobnywatek.Interrupt(); }
+        }
         
-        if (konsolaGUI_osobnywatek.IsAlive == true) { konsolaGUI_osobnywatek.Interrupt(); }
         KonsolaGUI.Console.ZamkniecieNarzedzi();
     }
 
@@ -394,6 +403,11 @@ public partial class MainWindow : Window
         }
     }
     
+    private void Menu_chmura_narzedziadeweloperskie_OnClick(object? sender, RoutedEventArgs e)
+    {
+        OtworzLinkWPrzegladarceInternetowej(Chmura.Linki.narzedziadeweloperskie);
+    }
+    
     private void Menu_chmura_metadane_OnClick(object? sender, RoutedEventArgs e)
     {
         OtworzLinkWPrzegladarceInternetowej(Chmura.Linki.metadane);
@@ -427,6 +441,21 @@ public partial class MainWindow : Window
     private void Menu_chmura_udostepnionepubliczniepolonizacje_OnClick(object? sender, RoutedEventArgs e)
     {
         OtworzLinkWPrzegladarceInternetowej(Chmura.Linki.udostepnionepubliczniepolonizacje);
+    }
+
+    private void Menu_wyodrebnijpliki_plikiTXTiJSON_OnClick(object? sender, RoutedEventArgs e)
+    {
+        Console.WriteLine("[DEBUG] Wejście w: Menu_wyodrebnijpliki_plikiTXTiJSON_OnClick");
+        
+        MessageBox_wyodrebnijplikiTXTiJSON();
+    }
+    
+    
+    
+    
+    private async void MessageBox_wyodrebnijplikiTXTiJSON()
+    {
+        Komunikat.Okno.Otworz("Wyodrębnianie plików", "Czy chcesz wyodrębnić pliki?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijPlikiTXTiJSON);
     }
 }
 

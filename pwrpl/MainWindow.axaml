@@ -7,7 +7,8 @@
         mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="pwrpl.MainWindow"
         Icon="pwrpl.ico"
-        Title="" Width="1220" Height="800"
+        Title=""
+        Width="1220" Height="800"
         MinWidth="800" MinHeight="600"
         Closing="MainWindow_OnClosing">
     
@@ -27,6 +28,7 @@
                             <Setter Property="FontSize" Value="18"/>
                         </Style>
                     </MenuItem.Styles>
+                    <MenuItem x:Name="menu_chmura_narzedziadeweloperskie" Header="Narzędzia deweloperskie" Click="Menu_chmura_narzedziadeweloperskie_OnClick" />
                     <MenuItem x:Name="menu_chmura_metadane" Header="Metadane dla pwrpl-converter" Click="Menu_chmura_metadane_OnClick" />
                     <MenuItem x:Name="menu_chmura_builderinstalatoraipaczki" Header="Builder instalatora i paczki PWR_PL" Click="Menu_chmura_builderinstalatoraipaczki_OnClick" />
                     <MenuItem x:Name="menu_chmura_polskieczcionki" Header="Implementacja polskich znaków" Click="Menu_chmura_polskieczcionki_OnClick" />
@@ -55,9 +57,17 @@
                 </MenuItem>
                 
                 
+                
+                <MenuItem x:Name="menu_wyodrebnijpliki" Header="Wyodrębnij pliki" Width="200" Height="40" FontSize="18" Background="#764A4646" Foreground="#7FFFFFFF">
+                    <MenuItem x:Name="menu_wyodrebnijpliki_plikiTXTiJSON" Width="200" Height="40" FontSize="18" Header="Pliki *.txt i *.json" Click="Menu_wyodrebnijpliki_plikiTXTiJSON_OnClick" />
+                </MenuItem>
+
+                
+                
                 <MenuItem x:Name="menu_debug" Header="debug" Width="200" Height="40" FontSize="18" Background="#764A4646" Foreground="#7FFFFFFF" IsVisible="False">
                     <MenuItem x:Name="menu_debug_test" Width="200" Height="40" FontSize="18" Header="test" />
                 </MenuItem>
+                
 
             </Menu>
             
