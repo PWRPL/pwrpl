@@ -39,35 +39,35 @@ namespace pwrpl_tools
             {
                 List<string> lp = new List<string>(new string[]
                 {
-                    "ToyBox\\classes\\MainUI\\Browser\\BlueprintAction.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\BlueprintBrowser.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\BlueprintListUI.cs",
-                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox\\classes\\MainUI\\Browser\\Editor.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\EditorActions.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\FactsEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\ArmiesEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\CrusadeEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\EventEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\SettlementsEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\EtudeChildrenDrawer.cs",
-                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox\\classes\\MainUI\\Etudes\\EtudeInfo.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\EtudesEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\EtudeTreeModel.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\ReferenceGraph.cs",
-                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox\\classes\\MainUI\\ActionButtons.cs",
-                    "ToyBox\\classes\\MainUI\\Actions.cs",
-                    "ToyBox\\classes\\MainUI\\BagOfTricks.cs",
-                    "ToyBox\\classes\\MainUI\\BlueprintLoader.cs",
-                    "ToyBox\\classes\\MainUI\\CharacterPicker.cs",
-                    "ToyBox\\classes\\MainUI\\EnchantmentEditor.cs",
-                    "ToyBox\\classes\\MainUI\\FeaturesTreeEditor.cs",
-                    "ToyBox\\classes\\MainUI\\LevelUp.cs",
-                    "ToyBox\\classes\\MainUI\\Main.cs",
-                    "ToyBox\\classes\\MainUI\\MulticlassPicker.cs",
-                    "ToyBox\\classes\\MainUI\\PartyEditor.cs",
-                    "ToyBox\\classes\\MainUI\\PhatLoot.cs",
-                    "ToyBox\\classes\\MainUI\\Playground.cs",
-                    "ToyBox\\classes\\MainUI\\QuestEditor.cs"
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BlueprintAction.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BlueprintBrowser.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BlueprintListUI.cs",
+                    //w tej wersji brak wykrytych stringów w tym pliku// $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}Editor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}EditorActions.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}FactsEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}ArmiesEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}CrusadeEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}EventEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}SettlementsEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudeChildrenDrawer.cs",
+                    //w tej wersji brak wykrytych stringów w tym pliku// $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudeInfo.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudesEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudeTreeModel.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}ReferenceGraph.cs",
+                    //w tej wersji brak wykrytych stringów w tym pliku// $"ToyBox{sc}classes{sc}MainUI{sc}ActionButtons.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Actions.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}BagOfTricks.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}BlueprintLoader.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}CharacterPicker.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}EnchantmentEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}FeaturesTreeEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}LevelUp.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Main.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}MulticlassPicker.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}PartyEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}PhatLoot.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Playground.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}QuestEditor.cs"
                 });
                 listaplikow = lp;
             }
@@ -77,36 +77,36 @@ namespace pwrpl_tools
             {
                 List<string> lp = new List<string>(new string[]
                 {
-                    "ToyBox\\classes\\MainUI\\Browser\\BuffExclusionEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\BlueprintAction.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\BlueprintBrowser.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\BlueprintListUI.cs",
-                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox\\classes\\MainUI\\Browser\\Editor.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\EditorActions.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\FactsEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\ArmiesEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\CrusadeEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\EventEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\SettlementsEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\EtudeChildrenDrawer.cs",
-                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox\\classes\\MainUI\\Etudes\\EtudeInfo.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\EtudesEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\EtudeTreeModel.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\ReferenceGraph.cs",
-                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox\\classes\\MainUI\\ActionButtons.cs",
-                    "ToyBox\\classes\\MainUI\\Actions.cs",
-                    "ToyBox\\classes\\MainUI\\BagOfTricks.cs",
-                    "ToyBox\\classes\\MainUI\\BlueprintLoader.cs",
-                    "ToyBox\\classes\\MainUI\\CharacterPicker.cs",
-                    "ToyBox\\classes\\MainUI\\EnchantmentEditor.cs",
-                    "ToyBox\\classes\\MainUI\\FeaturesTreeEditor.cs",
-                    "ToyBox\\classes\\MainUI\\LevelUp.cs",
-                    "ToyBox\\classes\\MainUI\\Main.cs",
-                    "ToyBox\\classes\\MainUI\\MulticlassPicker.cs",
-                    "ToyBox\\classes\\MainUI\\PartyEditor.cs",
-                    "ToyBox\\classes\\MainUI\\PhatLoot.cs",
-                    "ToyBox\\classes\\MainUI\\Playground.cs",
-                    "ToyBox\\classes\\MainUI\\QuestEditor.cs"
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BuffExclusionEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BlueprintAction.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BlueprintBrowser.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BlueprintListUI.cs",
+                    //w tej wersji brak wykrytych stringów w tym pliku// $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}Editor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}EditorActions.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}FactsEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}ArmiesEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}CrusadeEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}EventEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}SettlementsEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudeChildrenDrawer.cs",
+                    //w tej wersji brak wykrytych stringów w tym pliku// $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudeInfo.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudesEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudeTreeModel.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}ReferenceGraph.cs",
+                    //w tej wersji brak wykrytych stringów w tym pliku// $"ToyBox{sc}classes{sc}MainUI{sc}ActionButtons.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Actions.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}BagOfTricks.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}BlueprintLoader.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}CharacterPicker.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}EnchantmentEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}FeaturesTreeEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}LevelUp.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Main.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}MulticlassPicker.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}PartyEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}PhatLoot.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Playground.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}QuestEditor.cs"
                 });
                 listaplikow = lp;
             }
@@ -115,38 +115,38 @@ namespace pwrpl_tools
             {
                 List<string> lp = new List<string>(new string[]
                 {
-                    "ToyBox\\classes\\Models\\Settings+UI.cs",
+                    $"ToyBox{sc}classes{sc}Models{sc}Settings+UI.cs",
 
-                    "ToyBox\\classes\\MainUI\\Browser\\BuffExclusionEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\BlueprintAction.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\BlueprintBrowser.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\BlueprintListUI.cs",
-                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox\\classes\\MainUI\\Browser\\Editor.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\EditorActions.cs",
-                    "ToyBox\\classes\\MainUI\\Browser\\FactsEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\ArmiesEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\CrusadeEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\EventEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Crusade\\SettlementsEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\EtudeChildrenDrawer.cs",
-                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox\\classes\\MainUI\\Etudes\\EtudeInfo.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\EtudesEditor.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\EtudeTreeModel.cs",
-                    "ToyBox\\classes\\MainUI\\Etudes\\ReferenceGraph.cs",
-                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox\\classes\\MainUI\\ActionButtons.cs",
-                    "ToyBox\\classes\\MainUI\\Actions.cs",
-                    "ToyBox\\classes\\MainUI\\BagOfTricks.cs",
-                    "ToyBox\\classes\\MainUI\\BlueprintLoader.cs",
-                    "ToyBox\\classes\\MainUI\\CharacterPicker.cs",
-                    "ToyBox\\classes\\MainUI\\EnchantmentEditor.cs",
-                    "ToyBox\\classes\\MainUI\\FeaturesTreeEditor.cs",
-                    "ToyBox\\classes\\MainUI\\LevelUp.cs",
-                    "ToyBox\\classes\\MainUI\\Main.cs",
-                    "ToyBox\\classes\\MainUI\\MulticlassPicker.cs",
-                    "ToyBox\\classes\\MainUI\\PartyEditor.cs",
-                    "ToyBox\\classes\\MainUI\\PhatLoot.cs",
-                    "ToyBox\\classes\\MainUI\\Playground.cs",
-                    "ToyBox\\classes\\MainUI\\QuestEditor.cs"
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BuffExclusionEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BlueprintAction.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BlueprintBrowser.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}BlueprintListUI.cs",
+                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}Editor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}EditorActions.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Browser{sc}FactsEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}ArmiesEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}CrusadeEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}EventEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Crusade{sc}SettlementsEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudeChildrenDrawer.cs",
+                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudeInfo.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudesEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}EtudeTreeModel.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Etudes{sc}ReferenceGraph.cs",
+                    //w tej wersji brak wykrytych stringów w tym pliku// "ToyBox{sc}classes{sc}MainUI{sc}ActionButtons.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Actions.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}BagOfTricks.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}BlueprintLoader.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}CharacterPicker.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}EnchantmentEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}FeaturesTreeEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}LevelUp.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Main.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}MulticlassPicker.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}PartyEditor.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}PhatLoot.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}Playground.cs",
+                    $"ToyBox{sc}classes{sc}MainUI{sc}QuestEditor.cs"
                 });
                 listaplikow = lp;
             }
@@ -173,7 +173,7 @@ namespace pwrpl_tools
                 listastalych.Add(new ToyBox_Stala
                 {
                     Index = 0,
-                    PlikCS = "ModKit\\Utility\\Logging.cs",
+                    PlikCS = $"ModKit{sc}Utility{sc}Logging.cs",
                     String_EN = "    public enum LogLevel : int {\n        Error,\n        Warning,\n        Info,\n        Debug,\n        Trace\n    }\n",
                     String_PL = "    public enum LogLevel : int {\n        Błąd,\n        Ostrzeżenie,\n        Informacja,\n        Debugowanie,\n        Śledzenie\n    }\n"
                 });
@@ -181,7 +181,7 @@ namespace pwrpl_tools
                 listastalych.Add(new ToyBox_Stala
                 {
                     Index = 1,
-                    PlikCS = "ModKit\\Utility\\Logging.cs",
+                    PlikCS = $"ModKit{sc}Utility{sc}Logging.cs",
                     String_EN = "LogLevel.Error",
                     String_PL = "LogLevel.Błąd"
                 });
@@ -189,7 +189,7 @@ namespace pwrpl_tools
                 listastalych.Add(new ToyBox_Stala
                 {
                     Index = 2,
-                    PlikCS = "ModKit\\Utility\\Logging.cs",
+                    PlikCS = $"ModKit{sc}Utility{sc}Logging.cs",
                     String_EN = "LogLevel.Warning",
                     String_PL = "LogLevel.Ostrzeżenie"
                 });
@@ -197,7 +197,7 @@ namespace pwrpl_tools
                 listastalych.Add(new ToyBox_Stala
                 {
                     Index = 3,
-                    PlikCS = "ModKit\\Utility\\Logging.cs",
+                    PlikCS = $"ModKit{sc}Utility{sc}Logging.cs",
                     String_EN = "LogLevel.Info",
                     String_PL = "LogLevel.Informacja"
                 });
@@ -205,7 +205,7 @@ namespace pwrpl_tools
                 listastalych.Add(new ToyBox_Stala
                 {
                     Index = 4,
-                    PlikCS = "ModKit\\Utility\\Logging.cs",
+                    PlikCS = $"ModKit{sc}Utility{sc}Logging.cs",
                     String_EN = "LogLevel.Debug",
                     String_PL = "LogLevel.Debugowanie"
                 });
@@ -213,7 +213,7 @@ namespace pwrpl_tools
                 listastalych.Add(new ToyBox_Stala
                 {
                     Index = 5,
-                    PlikCS = "ModKit\\Utility\\Logging.cs",
+                    PlikCS = $"ModKit{sc}Utility{sc}Logging.cs",
                     String_EN = "LogLevel.Trace",
                     String_PL = "LogLevel.Śledzenie"
                 });
@@ -221,7 +221,7 @@ namespace pwrpl_tools
                 listastalych.Add(new ToyBox_Stala
                 {
                     Index = 5,
-                    PlikCS = "ToyBox\\classes\\Models\\Settings.cs",
+                    PlikCS = $"ToyBox{sc}classes{sc}Models{sc}Settings.cs",
                     String_EN = "LogLevel.Info",
                     String_PL = "LogLevel.Informacja"
                 });
@@ -274,7 +274,7 @@ namespace pwrpl_tools
             {
                 if (typ_folderu == "CS")
                 {
-                    if (File.Exists(nazwa_folderu + "\\" + zdefiniowanastrukturalokalizacji_listaplikow[spr]) == false)
+                    if (File.Exists(nazwa_folderu + sc + zdefiniowanastrukturalokalizacji_listaplikow[spr]) == false)
                     {
                         czystrukturajestzgodna = false;
                         iloscplikowwstrukturze--;
@@ -282,7 +282,7 @@ namespace pwrpl_tools
                 }
                 else if (typ_folderu == "StringsTransifexcomTXT")
                 {
-                    if (File.Exists(nazwa_folderu + "\\" + zdefiniowanastrukturalokalizacji_listaplikow[spr] + ".StringsTransifexCOM.txt") == false)
+                    if (File.Exists(nazwa_folderu + sc + zdefiniowanastrukturalokalizacji_listaplikow[spr] + ".StringsTransifexCOM.txt") == false)
                     {
                         czystrukturajestzgodna = false;
                         iloscplikowwstrukturze--;
@@ -307,14 +307,14 @@ namespace pwrpl_tools
 
             for (int i1 = 0; i1 < zdefiniowanastrukturalokalizacjidlastringow_listaplikow.Count(); i1++)
             {
-                string[] nazwa_folderu = zdefiniowanastrukturalokalizacjidlastringow_listaplikow[i1].Split('\\');
+                string[] nazwa_folderu = zdefiniowanastrukturalokalizacjidlastringow_listaplikow[i1].Split(sc);
 
                 string ostatniasciezkadoglebokoscifolderu_tmp = nazwa_folderu_lokalizacji;
                 for (int i2 = 0; i2 < nazwa_folderu.Length; i2++)
                 {
                     if (nazwa_folderu[i2].Contains(".cs") == false)
                     {
-                        ostatniasciezkadoglebokoscifolderu_tmp = ostatniasciezkadoglebokoscifolderu_tmp + "\\" + nazwa_folderu[i2];
+                        ostatniasciezkadoglebokoscifolderu_tmp = ostatniasciezkadoglebokoscifolderu_tmp + sc + nazwa_folderu[i2];
 
                         if (Directory.Exists(ostatniasciezkadoglebokoscifolderu_tmp) == false)
                         {
@@ -334,14 +334,14 @@ namespace pwrpl_tools
 
                 for (int i3 = 0; i3 < zdefiniowanastrukturalokalizacjidlastalych_listaplikow.Count(); i3++)
                 {
-                    string[] nazwa_folderu = zdefiniowanastrukturalokalizacjidlastalych_listaplikow[i3].Split('\\');
+                    string[] nazwa_folderu = zdefiniowanastrukturalokalizacjidlastalych_listaplikow[i3].Split(sc);
 
                     string ostatniasciezkadoglebokoscifolderu_tmp = nazwa_folderu_lokalizacji;
                     for (int i4 = 0; i4 < nazwa_folderu.Length; i4++)
                     {
                         if (nazwa_folderu[i4].Contains(".cs") == false)
                         {
-                            ostatniasciezkadoglebokoscifolderu_tmp = ostatniasciezkadoglebokoscifolderu_tmp + "\\" + nazwa_folderu[i4];
+                            ostatniasciezkadoglebokoscifolderu_tmp = ostatniasciezkadoglebokoscifolderu_tmp + sc + nazwa_folderu[i4];
 
                             if (Directory.Exists(ostatniasciezkadoglebokoscifolderu_tmp) == false)
                             {
@@ -444,7 +444,7 @@ namespace pwrpl_tools
 
             for (int zlp = 0; zlp < zdefiniowanastrukturalokalizacjidlaStringow_listaplikow.Count(); zlp++)
             {
-                Console.WriteLine("<Nazwa_Folderu>\\" + zdefiniowanastrukturalokalizacjidlaStringow_listaplikow[zlp]);
+                Console.WriteLine($"<Nazwa_Folderu>{sc}" + zdefiniowanastrukturalokalizacjidlaStringow_listaplikow[zlp]);
             }
 
             Console.WriteLine("\nb) Lista plików dla podanej wersji, w których modyfikowane są Stałe:");
@@ -453,7 +453,7 @@ namespace pwrpl_tools
 
             for (int zlp2 = 0; zlp2 < zdefiniowanastrukturalokalizacjidlaStalych_listaplikow.Count(); zlp2++)
             {
-                Console.WriteLine("<Nazwa_Folderu>\\" + zdefiniowanastrukturalokalizacjidlaStalych_listaplikow[zlp2]);
+                Console.WriteLine($"<Nazwa_Folderu>{sc}" + zdefiniowanastrukturalokalizacjidlaStalych_listaplikow[zlp2]);
             }
 
             Informacja("\nZalecane jest umieszczanie całych folderów \"ModKit\" oraz \"ToyBox\" z kodami źródłowymi ToyBox'a w celach konwersji.");
@@ -503,7 +503,7 @@ namespace pwrpl_tools
                         string sciezkadodanegoplikuCS = zdefiniowanastrukturalokalizacji_listaplikow[og];
                         string sciezkadodanegoplikustringsTransifexcomTXT = sciezkadodanegoplikuCS + ".stringsTransifexCOM.txt";
                         string nazwaplikuCS = "";
-                        string[] sciezka_podzial = sciezkadodanegoplikuCS.Split('\\');
+                        string[] sciezka_podzial = sciezkadodanegoplikuCS.Split(sc);
                         for (int np = 0; np < sciezka_podzial.Length; np++)
                         {
                             if (sciezka_podzial[np].Contains(".cs") == true)
@@ -512,14 +512,14 @@ namespace pwrpl_tools
                             }
                         }
 
-                        if (File.Exists(nazwafolderuCS + "\\" + sciezkadodanegoplikuCS) == true)
+                        if (File.Exists(nazwafolderuCS + sc + sciezkadodanegoplikuCS) == true)
                         {
-                            uint plik_CS_liczbalinii = PoliczLiczbeLinii(nazwafolderuCS + "\\" + sciezkadodanegoplikuCS);
+                            uint plik_CS_liczbalinii = PoliczLiczbeLinii(nazwafolderuCS + sc + sciezkadodanegoplikuCS);
 
                             //Console.WriteLine("Istnieje podany plik.");
-                            FileStream plik_CS_fs = new FileStream(nazwafolderuCS + "\\" + sciezkadodanegoplikuCS, FileMode.Open, FileAccess.Read);
-                            //if (File.Exists(nazwafolderuCS + "\\" + sciezkadodanegoplikuCS) == true) { File.Delete(nazwafolderuCS + "\\" + sciezkadodanegoplikuCS); }
-                            FileStream nowy_plik_transifexCOMstringstxt_fs = new FileStream(nazwaNOWEGOfolderuStringsTransifexcomTXT + "\\" + sciezkadodanegoplikustringsTransifexcomTXT, FileMode.Create, FileAccess.ReadWrite);
+                            FileStream plik_CS_fs = new FileStream(nazwafolderuCS + sc + sciezkadodanegoplikuCS, FileMode.Open, FileAccess.Read);
+                            //if (File.Exists(nazwafolderuCS + sc + sciezkadodanegoplikuCS) == true) { File.Delete(nazwafolderuCS + sc + sciezkadodanegoplikuCS); }
+                            FileStream nowy_plik_transifexCOMstringstxt_fs = new FileStream(nazwaNOWEGOfolderuStringsTransifexcomTXT + sc + sciezkadodanegoplikustringsTransifexcomTXT, FileMode.Create, FileAccess.ReadWrite);
 
                             try
                             {
@@ -627,7 +627,7 @@ namespace pwrpl_tools
                         }
                         else
                         {
-                            Blad("BŁĄD: Nie istnieje plik: " + nazwafolderuCS + "\\" + sciezkadodanegoplikuCS + " (og==" + og + ")");
+                            Blad("BŁĄD: Nie istnieje plik: " + nazwafolderuCS + sc + sciezkadodanegoplikuCS + " (og==" + og + ")");
                         }
 
                     }
@@ -648,7 +648,7 @@ namespace pwrpl_tools
             int ilosc_utworzonychplikowStringsTransifexcomTXT = 0;
             for (int sip = 0; sip < zdefiniowanastrukturalokalizacji_listaplikow.Count(); sip++)
             {
-                if (File.Exists(nazwaNOWEGOfolderuStringsTransifexcomTXT + "\\" + zdefiniowanastrukturalokalizacji_listaplikow[sip] + ".stringsTransifexCOM.txt") == false)
+                if (File.Exists(nazwaNOWEGOfolderuStringsTransifexcomTXT + sc + zdefiniowanastrukturalokalizacji_listaplikow[sip] + ".stringsTransifexCOM.txt") == false)
                 {
                     nieutworzonowszystkichplikow = true;
 
@@ -731,7 +731,7 @@ namespace pwrpl_tools
                         string sciezkadodanegoplikustringsTransifexcomTXT = sciezkadodanegoplikuCS + ".stringsTransifexCOM.txt";
                         string nazwaplikuCS = "";
                         string nazwaplikuStringsTransifexcomTXT = "";
-                        string[] sciezka_podzial = sciezkadodanegoplikuCS.Split('\\');
+                        string[] sciezka_podzial = sciezkadodanegoplikuCS.Split(sc);
                         for (int np = 0; np < sciezka_podzial.Length; np++)
                         {
                             if (sciezka_podzial[np].Contains(".cs") == true)
@@ -743,14 +743,14 @@ namespace pwrpl_tools
                         }
 
 
-                        List<RekordTXT> plikCS_oryginalnyEN_zawartosclinii = WczytajDaneZPlikuDoListy("CS", folderCS_oryginalnyEN_nazwa + "\\" + sciezkadodanegoplikuCS);
-                        List<RekordTXT> plikstringsTransifexcomTXTEN_zawartosclinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXTEN_nazwa + "\\" + sciezkadodanegoplikustringsTransifexcomTXT);
-                        List<RekordTXT> plikstringsTransifexcomTXTPL_zawartosclinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXTPL_nazwa + "\\" + sciezkadodanegoplikustringsTransifexcomTXT);
+                        List<RekordTXT> plikCS_oryginalnyEN_zawartosclinii = WczytajDaneZPlikuDoListy("CS", folderCS_oryginalnyEN_nazwa + sc + sciezkadodanegoplikuCS);
+                        List<RekordTXT> plikstringsTransifexcomTXTEN_zawartosclinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXTEN_nazwa + sc + sciezkadodanegoplikustringsTransifexcomTXT);
+                        List<RekordTXT> plikstringsTransifexcomTXTPL_zawartosclinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXTPL_nazwa + sc + sciezkadodanegoplikustringsTransifexcomTXT);
 
 
                         if (plikstringsTransifexcomTXTEN_zawartosclinii.Count() == plikstringsTransifexcomTXTPL_zawartosclinii.Count())
                         {
-                            FileStream nowyplikCS_fs = new FileStream(nowyfolderCS_nazwa + "\\" + sciezkadodanegoplikuCS, FileMode.Create, FileAccess.ReadWrite);
+                            FileStream nowyplikCS_fs = new FileStream(nowyfolderCS_nazwa + sc + sciezkadodanegoplikuCS, FileMode.Create, FileAccess.ReadWrite);
                             StreamWriter nowyplikCS_sw = new StreamWriter(nowyplikCS_fs);
 
                             int numer_aktualnejlinii;
@@ -785,7 +785,7 @@ namespace pwrpl_tools
                         }
                         else
                         {
-                            Blad("BŁĄD: Ilość linii w plikach \"" + folderstringsTransifexcomTXTEN_nazwa + "\\" + sciezkadodanegoplikustringsTransifexcomTXT + "\" i \"" + folderstringsTransifexcomTXTPL_nazwa + "\\" + sciezkadodanegoplikustringsTransifexcomTXT + "\" + plikstringsTransifexcomTXTPL_nazwa + \"\" nie zgadza się.");
+                            Blad("BŁĄD: Ilość linii w plikach \"" + folderstringsTransifexcomTXTEN_nazwa + sc + sciezkadodanegoplikustringsTransifexcomTXT + "\" i \"" + folderstringsTransifexcomTXTPL_nazwa + sc + sciezkadodanegoplikustringsTransifexcomTXT + "\" + plikstringsTransifexcomTXTPL_nazwa + \"\" nie zgadza się.");
                         }
 
                     }
@@ -803,11 +803,11 @@ namespace pwrpl_tools
 
                     for (int ls1 = 0; ls1 < listastalych.Count; ls1++)
                     {
-                        if (File.Exists(nowyfolderCS_nazwa + "\\" + listastalych[ls1].PlikCS) == false)
+                        if (File.Exists(nowyfolderCS_nazwa + sc + listastalych[ls1].PlikCS) == false)
                         {
-                            if (File.Exists(folderCS_oryginalnyEN_nazwa + "\\" + listastalych[ls1].PlikCS) == true)
+                            if (File.Exists(folderCS_oryginalnyEN_nazwa + sc + listastalych[ls1].PlikCS) == true)
                             {
-                                FileStream plikCSorig_fs = new FileStream(folderCS_oryginalnyEN_nazwa + "\\" + listastalych[ls1].PlikCS, FileMode.Open, FileAccess.Read);
+                                FileStream plikCSorig_fs = new FileStream(folderCS_oryginalnyEN_nazwa + sc + listastalych[ls1].PlikCS, FileMode.Open, FileAccess.Read);
                                 StreamReader plikCSorig_sr = new StreamReader(plikCSorig_fs);
 
                                 string zrodloplikuCS = plikCSorig_sr.ReadToEnd().Replace(listastalych[ls1].String_EN, listastalych[ls1].String_PL);
@@ -819,7 +819,7 @@ namespace pwrpl_tools
                                 plikCSorig_fs.Close();
 
 
-                                FileStream plikCS_fs = new FileStream(nowyfolderCS_nazwa + "\\" + listastalych[ls1].PlikCS, FileMode.Create, FileAccess.Write);
+                                FileStream plikCS_fs = new FileStream(nowyfolderCS_nazwa + sc + listastalych[ls1].PlikCS, FileMode.Create, FileAccess.Write);
                                 StreamWriter plikCS_sw = new StreamWriter(plikCS_fs);
 
                                 plikCS_sw.Write(zrodloplikuCS);
@@ -830,9 +830,9 @@ namespace pwrpl_tools
                             }
 
                         }
-                        else if (File.Exists(nowyfolderCS_nazwa + "\\" + listastalych[ls1].PlikCS) == true)
+                        else if (File.Exists(nowyfolderCS_nazwa + sc + listastalych[ls1].PlikCS) == true)
                         {
-                            FileStream plikCSprzedzmiana_fs = new FileStream(nowyfolderCS_nazwa + "\\" + listastalych[ls1].PlikCS, FileMode.Open, FileAccess.Read);
+                            FileStream plikCSprzedzmiana_fs = new FileStream(nowyfolderCS_nazwa + sc + listastalych[ls1].PlikCS, FileMode.Open, FileAccess.Read);
                             StreamReader plikCSprzedzmiana_sr = new StreamReader(plikCSprzedzmiana_fs);
 
                             string zrodloplikuCS = plikCSprzedzmiana_sr.ReadToEnd().Replace(listastalych[ls1].String_EN, listastalych[ls1].String_PL);
@@ -841,7 +841,7 @@ namespace pwrpl_tools
                             plikCSprzedzmiana_fs.Close();
 
 
-                            FileStream plikCSpozmianie_fs = new FileStream(nowyfolderCS_nazwa + "\\" + listastalych[ls1].PlikCS, FileMode.Open, FileAccess.Write);
+                            FileStream plikCSpozmianie_fs = new FileStream(nowyfolderCS_nazwa + sc + listastalych[ls1].PlikCS, FileMode.Open, FileAccess.Write);
                             StreamWriter plikCSpozmianie_sw = new StreamWriter(plikCSpozmianie_fs);
 
                             plikCSpozmianie_sw.Write(zrodloplikuCS);
@@ -880,7 +880,7 @@ namespace pwrpl_tools
             int ilosc_utworzonychplikowCSdlaStringow = 0;
             for (int sip = 0; sip < zdefiniowanastrukturalokalizacjidlaStringow_listaplikow.Count(); sip++)
             {
-                if (File.Exists(nowyfolderCS_nazwa + "\\" + zdefiniowanastrukturalokalizacjidlaStringow_listaplikow[sip]) == false)
+                if (File.Exists(nowyfolderCS_nazwa + sc + zdefiniowanastrukturalokalizacjidlaStringow_listaplikow[sip]) == false)
                 {
                     nieutworzonowszystkichplikow = true;
 
@@ -893,7 +893,7 @@ namespace pwrpl_tools
             int ilosc_utworzonychplikowCSdlaStalych = 0;
             for (int sip2 = 0; sip2 < zdefiniowanastrukturalokalizacjidlaStalych_listaplikow.Count(); sip2++)
             {
-                if (File.Exists(nowyfolderCS_nazwa + "\\" + zdefiniowanastrukturalokalizacjidlaStalych_listaplikow[sip2]) == false)
+                if (File.Exists(nowyfolderCS_nazwa + sc + zdefiniowanastrukturalokalizacjidlaStalych_listaplikow[sip2]) == false)
                 {
                     nieutworzonowszystkichplikow = true;
 
@@ -950,7 +950,7 @@ namespace pwrpl_tools
 
                     for (int zd = 0; zd < zdefiniowanastrukturalokalizacji_listaplikow.Count; zd++)
                     {
-                        string[] podzial1 = zdefiniowanastrukturalokalizacji_listaplikow[zd].Split("\\");
+                        string[] podzial1 = zdefiniowanastrukturalokalizacji_listaplikow[zd].Split(sc);
 
                         string zasob_nazwa;
                         if (podzial1.Length > 1)
@@ -964,7 +964,7 @@ namespace pwrpl_tools
                         zasob_nazwa = zasob_nazwa + "stringstransifexcomtxt";
 
                         TXplikconf_sw.WriteLine("[o:" + organizacja_nazwa + ":p:" + projekt_nazwa + ":r:" + zasob_nazwa.ToLower().Replace(".", "").Replace("+", "") + "]");
-                        TXplikconf_sw.WriteLine("file_filter = <lang>/" + zdefiniowanastrukturalokalizacji_listaplikow[zd].Replace("\\", "/") + ".stringsTransifexCOM.txt");
+                        TXplikconf_sw.WriteLine("file_filter = <lang>/" + zdefiniowanastrukturalokalizacji_listaplikow[zd].Replace(sc.ToString(), "/") + ".stringsTransifexCOM.txt");
                         TXplikconf_sw.WriteLine("source_file = ");
                         TXplikconf_sw.WriteLine("source_lang = en");
                         TXplikconf_sw.WriteLine("type = TXT");
@@ -1067,7 +1067,7 @@ namespace pwrpl_tools
                     {
                         string sciezkaplikustringsTransifexcomTXT_nowejwersji = zdefiniowanastrukturalokalizacji_nowejwersji_listaplikow[og].Replace(".cs", ".cs.stringsTransifexCOM.txt");
                         string nazwaplikuStringsTransifexcomTXT = "";
-                        string[] sciezka_podzial = sciezkaplikustringsTransifexcomTXT_nowejwersji.Split('\\');
+                        string[] sciezka_podzial = sciezkaplikustringsTransifexcomTXT_nowejwersji.Split(sc);
                         for (int np = 0; np < sciezka_podzial.Length; np++)
                         {
                             if (sciezka_podzial[np].Contains(".cs.stringsTransifexCOM.txt") == true)
@@ -1076,19 +1076,19 @@ namespace pwrpl_tools
                             }
                         }
                         
-                        FileStream nowyplikStringsTransifexcomTXTnewPL_fs = new FileStream(nowyfolderstringsTransifexcomTXTnewPL_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_nowejwersji, FileMode.Create, FileAccess.Write);
+                        FileStream nowyplikStringsTransifexcomTXTnewPL_fs = new FileStream(nowyfolderstringsTransifexcomTXTnewPL_nazwa + sc + sciezkaplikustringsTransifexcomTXT_nowejwersji, FileMode.Create, FileAccess.Write);
                         StreamWriter nowyplikStringsTransifexcomTXTnewPL_sw = new StreamWriter(nowyplikStringsTransifexcomTXTnewPL_fs);
 
-                        FileStream nowyplikStringsTransifexcomTXTnewPL_zOZNACZONYMInowymiliniaminowejwersji_fs = new FileStream(nowyfolderstringsTransifexcomTXTnewPL_zOZNACZONYMInowymiliniaminowejwersji_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_nowejwersji, FileMode.Create, FileAccess.Write);
+                        FileStream nowyplikStringsTransifexcomTXTnewPL_zOZNACZONYMInowymiliniaminowejwersji_fs = new FileStream(nowyfolderstringsTransifexcomTXTnewPL_zOZNACZONYMInowymiliniaminowejwersji_nazwa + sc + sciezkaplikustringsTransifexcomTXT_nowejwersji, FileMode.Create, FileAccess.Write);
                         StreamWriter nowyplikStringsTransifexcomTXTnewPL_zOZNACZONYMInowymiliniaminowejwersji_sw = new StreamWriter(nowyplikStringsTransifexcomTXTnewPL_zOZNACZONYMInowymiliniaminowejwersji_fs);
 
 
-                        List<RekordTXT> plikstringsTransifexcomTXTnewEN_zawartoscilinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXTnewEN_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_nowejwersji);
+                        List<RekordTXT> plikstringsTransifexcomTXTnewEN_zawartoscilinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXTnewEN_nazwa + sc + sciezkaplikustringsTransifexcomTXT_nowejwersji);
 
 
-                        if (File.Exists(folderstringsTransifexcomTXToldEN_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_nowejwersji) == true)
+                        if (File.Exists(folderstringsTransifexcomTXToldEN_nazwa + sc + sciezkaplikustringsTransifexcomTXT_nowejwersji) == true)
                         {
-                            //Console.WriteLine("[DEBUG] folderstringsTransifexcomTXToldEN_nazwa\\sciezkaplikustringsTransifexcomTXT_nowejwersji==" + folderstringsTransifexcomTXToldEN_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_nowejwersji);
+                            //Console.WriteLine("[DEBUG] folderstringsTransifexcomTXToldEN_nazwa{sc}sciezkaplikustringsTransifexcomTXT_nowejwersji==" + folderstringsTransifexcomTXToldEN_nazwa + sc + sciezkaplikustringsTransifexcomTXT_nowejwersji);
 
                             string sciezkaplikustringsTransifexcomTXT_starejwersji;
                             List<string> wyszukanasciezkadodanegoplikulokalizacji_starejwersji = zdefiniowanastrukturalokalizacji_starejwersji_listaplikow.FindAll(x => x == zdefiniowanastrukturalokalizacji_nowejwersji_listaplikow[og]);
@@ -1097,15 +1097,15 @@ namespace pwrpl_tools
                             {
                                 sciezkaplikustringsTransifexcomTXT_starejwersji = sciezkaplikustringsTransifexcomTXT_nowejwersji;
 
-                                List<RekordTXT> plikstringsTransifexcomTXToldEN_zawartoscilinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXToldEN_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_starejwersji);
-                                List<RekordTXT> plikstringsTransifexcomTXToldPL_zawartoscilinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXToldPL_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_starejwersji);
+                                List<RekordTXT> plikstringsTransifexcomTXToldEN_zawartoscilinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXToldEN_nazwa + sc + sciezkaplikustringsTransifexcomTXT_starejwersji);
+                                List<RekordTXT> plikstringsTransifexcomTXToldPL_zawartoscilinii = WczytajDaneZPlikuDoListy("stringsTransifexcomTXT", folderstringsTransifexcomTXToldPL_nazwa + sc + sciezkaplikustringsTransifexcomTXT_starejwersji);
 
                                 if (plikstringsTransifexcomTXToldEN_zawartoscilinii.Count() == plikstringsTransifexcomTXToldPL_zawartoscilinii.Count())
                                 {
                                     int ilosc_wszystkichlinii = plikstringsTransifexcomTXTnewEN_zawartoscilinii.Count();
                                     int numer_aktualnejlinii;
 
-                                    //Console.WriteLine("[DEBUG] plikstringsTransifexcomTXTnewEN_zawartoscilinii.Count()==" + plikstringsTransifexcomTXTnewEN_zawartoscilinii.Count() + " (w: og==" + og + " tj. w pliku \"" + folderstringsTransifexcomTXTnewEN_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_nowejwersji + "\")");
+                                    //Console.WriteLine("[DEBUG] plikstringsTransifexcomTXTnewEN_zawartoscilinii.Count()==" + plikstringsTransifexcomTXTnewEN_zawartoscilinii.Count() + " (w: og==" + og + " tj. w pliku \"" + folderstringsTransifexcomTXTnewEN_nazwa + sc + sciezkaplikustringsTransifexcomTXT_nowejwersji + "\")");
 
                                     for (int op1 = 0; op1 < ilosc_wszystkichlinii; op1++)
                                     {
@@ -1140,13 +1140,13 @@ namespace pwrpl_tools
 
                                                 if (znalezionyrekord_oldEN.Count() > 1)
                                                 {
-                                                    //Informacja("[DEBUG] W pliku \"" + folderstringsTransifexcomTXToldEN_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_starejwersji + "\" znaleziono więcej niż 1 string==" + znalezionyrekord_oldEN[0].String);
+                                                    //Informacja("[DEBUG] W pliku \"" + folderstringsTransifexcomTXToldEN_nazwa + sc + sciezkaplikustringsTransifexcomTXT_starejwersji + "\" znaleziono więcej niż 1 string==" + znalezionyrekord_oldEN[0].String);
                                                     //Informacja("[DEBUG] Szczegóły powyższego komunikatu: W nowym pliku w tej linii zapisana zostanie pierwsza znaleziona treść stringa przeniesiona z odpowiadającej linii pliku starej wersji.");
                                                 }
                                             }
                                             else
                                             {
-                                                Blad("Wystąpił krytyczny wyjątek #3: Znaleziono więcej niż 1 jedną linię o tej samej wartości <NumerLinii:IndeksStringawDanejLinii> w pliku \"" + folderstringsTransifexcomTXToldPL_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_starejwersji + "\".");
+                                                Blad("Wystąpił krytyczny wyjątek #3: Znaleziono więcej niż 1 jedną linię o tej samej wartości <NumerLinii:IndeksStringawDanejLinii> w pliku \"" + folderstringsTransifexcomTXToldPL_nazwa + sc + sciezkaplikustringsTransifexcomTXT_starejwersji + "\".");
                                                 Blad("Szczegóły powyższego błędu: znalezionyrekord_oldPL.Count()==" + znalezionyrekord_oldPL.Count() + ", og==" + og + ", op1==" + op1);
                                                 PotwierdzEnterem();
                                             }
@@ -1172,20 +1172,20 @@ namespace pwrpl_tools
                                 }
                                 else
                                 {
-                                    Blad("BŁĄD: Ilość linii w plikach \"" + folderstringsTransifexcomTXToldEN_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_starejwersji + "\" i \"" + folderstringsTransifexcomTXToldPL_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_starejwersji + "\" nie zgadza się.");
+                                    Blad("BŁĄD: Ilość linii w plikach \"" + folderstringsTransifexcomTXToldEN_nazwa + sc + sciezkaplikustringsTransifexcomTXT_starejwersji + "\" i \"" + folderstringsTransifexcomTXToldPL_nazwa + sc + sciezkaplikustringsTransifexcomTXT_starejwersji + "\" nie zgadza się.");
                                     PotwierdzEnterem();
                                 }
 
                             }
                             else if (wyszukanasciezkadodanegoplikulokalizacji_starejwersji.Count() > 1)
                             {
-                                Blad("Wystąpił krytyczny wyjątek #1: Wykryto więcej niż jedną ścieżkę \"" + folderstringsTransifexcomTXToldPL_nazwa + "\\" + wyszukanasciezkadodanegoplikulokalizacji_starejwersji[0] + "\" w strukturze folderu lokalizacji.");
+                                Blad("Wystąpił krytyczny wyjątek #1: Wykryto więcej niż jedną ścieżkę \"" + folderstringsTransifexcomTXToldPL_nazwa + sc + wyszukanasciezkadodanegoplikulokalizacji_starejwersji[0] + "\" w strukturze folderu lokalizacji.");
                                 Blad("Szczegóły powyższego błędu: og==" + og + ", wyszukanasciezkadodanegoplikulokalizacji_starejwersji.Count()==" + wyszukanasciezkadodanegoplikulokalizacji_starejwersji.Count());
                                 PotwierdzEnterem();
                             }
                             else
                             {
-                                Blad("Wystąpił krytyczny wyjątek #2: Błąd podczas wyszukiwania ścieżki do pliku lokalizacji \"" + folderstringsTransifexcomTXToldPL_nazwa + "\\" + sciezkaplikustringsTransifexcomTXT_nowejwersji + "\" w strukturze folderu lokalizacji.");
+                                Blad("Wystąpił krytyczny wyjątek #2: Błąd podczas wyszukiwania ścieżki do pliku lokalizacji \"" + folderstringsTransifexcomTXToldPL_nazwa + sc + sciezkaplikustringsTransifexcomTXT_nowejwersji + "\" w strukturze folderu lokalizacji.");
                                 Blad("Szczegóły powyższego błędu: og==" + og + ", sciezkaplikustringsTransifexcomTXT_nowejwersji.Count()==" + sciezkaplikustringsTransifexcomTXT_nowejwersji.Count());
                                 PotwierdzEnterem();
                             }
