@@ -31,7 +31,7 @@ namespace pwrpl_tools
     class pwrpltools
     {
         public const string _PWR_nazwaprogramu = "pwrpl-tools";
-        public const string _PWR_wersjaprogramu = "v.2.03";
+        public const string _PWR_wersjaprogramu = "v.2.04";
         public const string _PWR_rokwydaniawersji = "2024";
 
         internal readonly static bool wylacz_calkowitepokazywaniepostepow = true; //ustawienie na true przyspiesza operacje w KonsoliGUI (zaimplementowane w operacjach nr. 1, 2, 101)
@@ -348,7 +348,7 @@ namespace pwrpl_tools
             Console.WriteLine("--------------EKSPERYMENTALNE[PWR_PL]----------");
             Console.WriteLine("9000. [JSON] Wczytywanie danych z pliku JSON.");
             Console.WriteLine("9001. [JSON] Znajdowanie indeksu konkretnego klucza w liście kluczy i stringów.");
-            Console.WriteLine("-----------------[ToyBox_PL]------------------");
+            Console.WriteLine("--------------[ToyBox_PL (nieaktualne)]---------------");
             Console.WriteLine("200. [Informacje] Wyświetl właściwą strukturę folderu lokalizacji dla zdefiniowanej wersji i buildu ToyBoxa.");
             Console.WriteLine("201. [FolderCS(origEN)->1xFolderStringsTransifexCOM.TXT(origEN)] Konwersja plików kodów źródłowych ToyBox CS do plików TXT przeznaczonych dla platformy Transifex.com (z identyfikatorami numerów linii według plików CS).");
             Console.WriteLine("202. [2xFolderStringsTransifexCOM.TXT(origEN&PL)+Folder CS(origEN)->1xFolder CS(PL)] Konwersja plików TXT z platformy Transifex.com do folderu plików kodów źródłowych CS ToyBoxa.");
