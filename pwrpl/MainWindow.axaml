@@ -60,6 +60,7 @@
                 
                 <MenuItem x:Name="menu_wyodrebnijpliki" Header="Wyodrębnij pliki" Width="200" Height="40" FontSize="18" Background="#764A4646" Foreground="#7FFFFFFF">
                     <MenuItem x:Name="menu_wyodrebnijpliki_plikiTXTiJSON" Width="200" Height="40" FontSize="18" Header="Pliki *.txt i *.json" Click="Menu_wyodrebnijpliki_plikiTXTiJSON_OnClick" />
+                    <MenuItem x:Name="menu_wyodrebnijpliki_metadane" Width="200" Height="40" FontSize="18" Header="Metadane" Click="Menu_wyodrebnijpliki_metadane_OnClick" />
                 </MenuItem>
 
                 

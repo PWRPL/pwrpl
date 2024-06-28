@@ -19,9 +19,9 @@ public partial class Okno : Window
 
     public static class Domyslny
     {
-        public static readonly string FontFamily = "Verdana";
+        public static readonly string FontFamily = "font_pwrpl";
         public static readonly double FontSize = 18;
-        public static readonly double Width = 500;
+        public static readonly double Width = 600;
         public static readonly double Height = 250;
 
     }

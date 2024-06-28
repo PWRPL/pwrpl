@@ -29,7 +29,7 @@ namespace pwrpl;
 public partial class MainWindow : Window
 {
     public const string _PWR_nazwaprogramu = "pwrpl";
-    public const string _PWR_wersjaprogramu = "v.0.1e(Alfa)";
+    public const string _PWR_wersjaprogramu = "v.0.2";
     public const string _PWR_rokwydaniawersji = "2024";
 
     public static readonly string pwrpl_katalogglownyprogramu = Directory.GetCurrentDirectory();
@@ -455,11 +455,26 @@ public partial class MainWindow : Window
     }
     
     
+    private void Menu_wyodrebnijpliki_metadane_OnClick(object? sender, RoutedEventArgs e)
+    {
+        #if DEBUG
+            Console.WriteLine("[DEBUG] Wejście w: Menu_wyodrebnijpliki_metadane_OnClick");
+        #endif
+        
+        OknoKomunikatu_wyodrebnijmetadane();
+    }
+
     
     
     private async void OknoKomunikatu_wyodrebnijplikiTXTiJSON()
     {
-        Komunikat.Okno.Otworz("Wyodrębnianie plików *.txt i *.json do podfolderu", "Wszystkie pliki .txt i .json zostaną wyodrębnione z katalogu programu do nowego podkatalogu. Tym samym przestaną być widoczne przez narzędzia.\nCzy chcesz wykonać tę operację?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijPlikiTXTiJSON);
+        Komunikat.Okno.Otworz("Wyodrębnianie plików", "Pliki .txt i .json (oprócz metadanych) zostaną wyodrębnione z katalogu programu do nowego podkatalogu. Tym samym przestaną być widoczne przez narzędzia.\nCzy chcesz wykonać tę operację?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijPlikiTXTiJSON);
     }
+    
+    private async void OknoKomunikatu_wyodrebnijmetadane()
+    {
+        Komunikat.Okno.Otworz("Wyodrębnianie metadanych", "Metadane zostaną wyodrębnione z katalogu programu do nowego podkatalogu. Tym samym przestaną być widoczne przez pwrpl-converter.\nCzy chcesz wykonać tę operację?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijMetadane);
+    }
+
 }
 

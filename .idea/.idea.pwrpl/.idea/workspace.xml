@@ -8,8 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/avalonia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/pwrpl-tools/pwrpltools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/pwrpl-tools/pwrpltools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/Komunikat/Okno.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/Komunikat/Okno.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/Komunikat/Okno.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/Komunikat/Okno.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/WyodrebnianiePlikow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/WyodrebnianiePlikow.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +129,10 @@
       <workItem from="1718890632380" duration="18085000" />
       <workItem from="1719032583976" duration="2111000" />
       <workItem from="1719046751138" duration="100000" />
+      <workItem from="1719297544436" duration="334000" />
+      <workItem from="1719583702460" duration="53000" />
+      <workItem from="1719595389573" duration="11332000" />
+      <workItem from="1719607922201" duration="5866000" />
     </task>
     <task id="LOCAL-00001" summary="v.0.1">
       <option name="closed" value="true" />
@@ -189,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719035018791</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="v.0.1e(Alfa)">
+      <option name="closed" value="true" />
+      <created>1719297843726</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719297843726</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +220,7 @@
     <MESSAGE value="v.0.1b" />
     <MESSAGE value="v.0.1c" />
     <MESSAGE value="v.0.1d" />
-    <option name="LAST_COMMIT_MESSAGE" value="v.0.1d" />
+    <MESSAGE value="v.0.1e(Alfa)" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.0.1e(Alfa)" />
   </component>
 </project>
