@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="pwrpl.Komunikat.Okno"
+        Icon="../pwrpl.ico"
+        Width="" Height=""
+        MinWidth="200" MinHeight="200" CanResize="false">
+    
+        <Grid x:Name="okno_siatkaglowna" Margin="10" Background="#764A4646"
+        MaxWidth="600" MaxHeight=""
+        MinWidth="600" MinHeight=""
+        >
+                <StackPanel Orientation="Vertical">
+                        <TextBlock x:Name="tresc_wiadomosci" Text="" Margin="25, 25, 25, 25" TextWrapping="Wrap" Width="550" MaxWidth="550" />
+                
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                <Button 
+                                        Name="okno_przycisk_Nie"
+                                        Content="Nie"
+                                        HorizontalContentAlignment="Center"
+                                        VerticalContentAlignment="Center"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Bottom"
+                                        Margin="25, 25, 25, 25"
+                                        
+                                        IsVisible="False"
+                                />
+                                
+                                <Button 
+                                        Name="okno_przycisk_Tak"
+                                        Content="Tak"
+                                        HorizontalContentAlignment="Center"
+                                        VerticalContentAlignment="Center"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Bottom"
+                                        Margin="25, 25, 25, 25"
+                        
+                                        IsVisible="False"
+                               />
+                                
+                               <Button 
+                                       Name="okno_przycisk_OK"
+                                       Content="OK"
+                                       HorizontalContentAlignment="Center"
+                                       VerticalContentAlignment="Center"
+                                       HorizontalAlignment="Right"
+                                       VerticalAlignment="Bottom"
+                                       Margin="25, 25, 25, 25"
+                        
+                                       IsVisible="False"
+                               />
+                        </StackPanel>
+                </StackPanel>
+                
+        </Grid>
+        
+</Window>

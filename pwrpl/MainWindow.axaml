@@ -1,0 +1,90 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pwrpl"
+        xmlns:KonsolaGUI="clr-namespace:pwrpl.KonsolaGUI"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+        x:Class="pwrpl.MainWindow"
+        Icon="pwrpl.ico"
+        Title=""
+        Width="1220" Height="800"
+        MinWidth="800" MinHeight="600"
+        Closing="MainWindow_OnClosing">
+    
+
+    
+    <Grid x:Name="siatka_glowna" Margin="5" Background="#764A4646">
+        
+        <Canvas x:Name="powloka_Menu" HorizontalAlignment="Left" VerticalAlignment="Top">
+            
+            <Menu Width="" HorizontalAlignment="Left" VerticalAlignment="Top">
+                
+                <MenuItem x:Name="menu_chmura" Header="Linki do chmury" Width="200" Height="40" FontSize="18" Background="#764A4646" Foreground="#7FFFFFFF">
+                    <MenuItem.Styles>
+                        <Style Selector="MenuItem">
+                            <Setter Property="Width" Value="400"/>
+                            <Setter Property="Height" Value="40"/>
+                            <Setter Property="FontSize" Value="18"/>
+                        </Style>
+                    </MenuItem.Styles>
+                    <MenuItem x:Name="menu_chmura_narzedziadeweloperskie" Header="Narzędzia deweloperskie" Click="Menu_chmura_narzedziadeweloperskie_OnClick" />
+                    <MenuItem x:Name="menu_chmura_metadane" Header="Metadane dla pwrpl-converter" Click="Menu_chmura_metadane_OnClick" />
+                    <MenuItem x:Name="menu_chmura_builderinstalatoraipaczki" Header="Builder instalatora i paczki PWR_PL" Click="Menu_chmura_builderinstalatoraipaczki_OnClick" />
+                    <MenuItem x:Name="menu_chmura_polskieczcionki" Header="Implementacja polskich znaków" Click="Menu_chmura_polskieczcionki_OnClick" />
+                    <MenuItem x:Name="menu_chmura_oryginalnepliki" Header="Oryginalne pliki PWR" Click="Menu_chmura_oryginalnepliki_OnClick" />
+                    <MenuItem x:Name="menu_chmura_transifexclientikonfiguracja" Header="Transifex Client z konfiguracją" Click="Menu_chmura_transifexclientikonfiguracja_OnClick" />
+                    <MenuItem x:Name="menu_chmura_winrar" Header="WinRAR PL z licencją PWR_PL" Click="Menu_chmura_winrar_OnClick" />
+                    <MenuItem x:Name="menu_chmura_udostepnionepubliczniepolonizacje" Header="Udostępnione publicznie polonizacje" Click="Menu_chmura_udostepnionepubliczniepolonizacje_OnClick" />
+                </MenuItem>
+
+                
+                <MenuItem x:Name="menu_interfejs" Header="Interfejs" Width="200" Height="40" FontSize="18" Background="#764A4646" Foreground="#7FFFFFFF">
+                    <MenuItem x:Name="menu_interfejs_motyw" Header="Motyw" Width="200" Height="40" FontSize="18">
+                        <MenuItem x:Name="menu_interfejs_motyw_jasny" Header="Jasny" Width="200" Height="40" FontSize="18" Click="Menu_interfejs_motyw_jasny_OnClick" />
+                        <MenuItem x:Name="menu_interfejs_motyw_ciemny" Header="Ciemny" Width="200" Height="40" FontSize="18" Click="Menu_interfejs_motyw_ciemny_OnClick" />
+                    </MenuItem>
+                    
+                    <MenuItem x:Name="menu_interfejs_skalowanie" Header="Skalowanie" Width="200" Height="40" FontSize="18">
+                        <MenuItem x:Name="menu_interfejs_skalowanie_50" Header="50%" Width="200" Height="40" FontSize="18" Click="Menu_interfejs_skalowanie_50_OnClick" />
+                        <MenuItem x:Name="menu_interfejs_skalowanie_75" Header="75%" Width="200" Height="40" FontSize="18" Click="Menu_interfejs_skalowanie_75_OnClick" />
+                        <MenuItem x:Name="menu_interfejs_skalowanie_100" Header="100%" Width="200" Height="40" FontSize="18" Click="Menu_interfejs_skalowanie_100_OnClick" />
+                        <MenuItem x:Name="menu_interfejs_skalowanie_125" Header="125%" Width="200" Height="40" FontSize="18" Click="Menu_interfejs_skalowanie_125_OnClick" />
+                        <MenuItem x:Name="menu_interfejs_skalowanie_150" Header="150%" Width="200" Height="40" FontSize="18" Click="Menu_interfejs_skalowanie_150_OnClick" />
+                        <MenuItem x:Name="menu_interfejs_skalowanie_175" Header="175%" Width="200" Height="40" FontSize="18" Click="Menu_interfejs_skalowanie_175_OnClick" />
+                        <MenuItem x:Name="menu_interfejs_skalowanie_200" Header="200%" Width="200" Height="40" FontSize="18" Click="Menu_interfejs_skalowanie_200_OnClick" />
+                    </MenuItem>
+                </MenuItem>
+                
+                
+                
+                <MenuItem x:Name="menu_wyodrebnijpliki" Header="Wyodrębnij pliki" Width="200" Height="40" FontSize="18" Background="#764A4646" Foreground="#7FFFFFFF">
+                    <MenuItem x:Name="menu_wyodrebnijpliki_plikiTXTiJSON" Width="200" Height="40" FontSize="18" Header="Pliki *.txt i *.json" Click="Menu_wyodrebnijpliki_plikiTXTiJSON_OnClick" />
+                    <MenuItem x:Name="menu_wyodrebnijpliki_metadane" Width="200" Height="40" FontSize="18" Header="Metadane" Click="Menu_wyodrebnijpliki_metadane_OnClick" />
+                </MenuItem>
+
+                
+                
+                <MenuItem x:Name="menu_debug" Header="debug" Width="200" Height="40" FontSize="18" Background="#764A4646" Foreground="#7FFFFFFF" IsVisible="False">
+                    <MenuItem x:Name="menu_debug_test" Width="200" Height="40" FontSize="18" Header="test" />
+                </MenuItem>
+                
+
+            </Menu>
+            
+        </Canvas>
+
+        <KonsolaGUI:Console 
+            Name="Konsola"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Width="1200"
+            Height="600"
+            Margin="5,50,5,50"></KonsolaGUI:Console>
+        
+        
+        
+    </Grid>
+    
+    
+</Window>

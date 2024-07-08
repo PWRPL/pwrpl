@@ -1,0 +1,19 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:pwrpl="clr-namespace:pwrpl"
+             x:Class="pwrpl.App"
+             RequestedThemeVariant="Dark">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+             
+             
+     <Application.Resources>
+         <FontFamily x:Key="font_pwrpl">avares://pwrpl#WorchesterEF</FontFamily>
+     </Application.Resources>
+             
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+</Application>
+
+
+
