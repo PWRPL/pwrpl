@@ -27,7 +27,7 @@ namespace pwrpl;
 public partial class MainWindow : Window
 {
     public const string _PWR_nazwaprogramu = "pwrpl";
-    public const string _PWR_wersjaprogramu = "v.0.4";
+    public const string _PWR_wersjaprogramu = "v.0.4b";
     public const string _PWR_rokwydaniawersji = "2024";
 
     public static readonly string pwrpl_katalogglownyprogramu = Directory.GetCurrentDirectory();

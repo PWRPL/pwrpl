@@ -27,8 +27,8 @@ namespace pwrpl_converter;
 partial class pwrpl_converter
 {
     private static readonly bool _alternatywne_cudzyslowy_czyuzywac = true; //jeśli true: zamienia wszystkie tagi <bs_n1> na alternatywne cudzysłowy „”
-    private static readonly string _alternatywny_cudzyslow_otwierajacy = "„"; // zalecany:  „
-    private static readonly string _alternatywny_cudzyslow_zamykajacy = "”"; // zalecany: ”
+    private static readonly string _alternatywny_cudzyslow_otwierajacy = "”"; // 
+    private static readonly string _alternatywny_cudzyslow_zamykajacy = "”"; // UWAGA: Zalecane jest stosowanie tych samych znaków otwierajacych i zamykających, ponieważ jeśli są różne (np. „”), występują błędy w wyświetlaniu cudzysłowów wewnątrz innych cudzysłowów - np. „tekst 1 ”tekst2„”
     
     public static string ZamienCudzyslowyZDomyslnychNaAlternatywne(string tresc_stringa)
     {
