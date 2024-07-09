@@ -7,19 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="v.0.4">
-      <change beforePath="$PROJECT_DIR$/pwrpl/pwrpl-converter/JSON.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/pwrpl-tools/JSON.cs" beforeDir="false" />
+    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="v.0.4b">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/pwrpl-converter/2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/pwrpl-converter/2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/pwrpl-converter/pwrpl-converter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/pwrpl-converter/pwrpl-converter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-    </option>
   </component>
   <component name="DpaMonitoringSettings">
     <option name="autoShow" value="false" />
@@ -184,6 +181,7 @@
       <workItem from="1720431710120" duration="186000" />
       <workItem from="1720431963655" duration="21000" />
       <workItem from="1720432010512" duration="329000" />
+      <workItem from="1720527255108" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="v.0.1">
       <option name="closed" value="true" />
@@ -289,7 +287,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720432338736</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="v.0.4">
+      <option name="closed" value="true" />
+      <created>1720432412230</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720432412230</updated>
+    </task>
+    <task id="LOCAL-00015" summary="v.0.4">
+      <option name="closed" value="true" />
+      <created>1720432475810</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720432475810</updated>
+    </task>
+    <task id="LOCAL-00016" summary="v.0.4b">
+      <option name="closed" value="true" />
+      <created>1720528386962</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720528386962</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +332,7 @@
     <MESSAGE value="v.0.2" />
     <MESSAGE value="v.0.3b(Alfa)" />
     <MESSAGE value="v.0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="v.0.4" />
+    <MESSAGE value="v.0.4b" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.0.4b" />
   </component>
 </project>

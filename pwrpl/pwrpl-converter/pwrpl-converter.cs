@@ -94,7 +94,7 @@ namespace pwrpl_converter
     partial class pwrpl_converter
     {
         public const string _PWR_nazwaprogramu = "pwrpl-converter";
-        public const string _PWR_wersjaprogramu = "v.3.05";
+        public const string _PWR_wersjaprogramu = "v.3.05b";
         public const string _PWR_rokwydaniawersji = "2024";
         
         public static char sc = System.IO.Path.DirectorySeparatorChar;
