@@ -7,13 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="v.0.5Alfa">
-      <change afterPath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="v.0.5Alfa2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +18,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -42,7 +35,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/931d907712eb4f0898abccccf85775a06b600/63/834ac486/AbstractMessageBoxParams.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/931d907712eb4f0898abccccf85775a06b600/9e/df5bf162/MessageBoxManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ed351abe393b71b2c97541855ec377cadae1726238e574b4206d40a9b5821d/FontFamily.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/revok/Revok-projekty/C#/pwrpl/pwrpl/MainWindow.axaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/revok/Revok-projekty/C#/pwrpl/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pwrpl/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -182,7 +175,8 @@
       <workItem from="1720431963655" duration="21000" />
       <workItem from="1720432010512" duration="329000" />
       <workItem from="1720527255108" duration="1171000" />
-      <workItem from="1721437319499" duration="14743000" />
+      <workItem from="1721437319499" duration="14848000" />
+      <workItem from="1721470905674" duration="1982000" />
     </task>
     <task id="LOCAL-00001" summary="v.0.1">
       <option name="closed" value="true" />
@@ -328,7 +322,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721452063297</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="v.0.5Alfa">
+      <option name="closed" value="true" />
+      <created>1721452159902</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1721452159902</updated>
+    </task>
+    <task id="LOCAL-00020" summary="v.0.5Alfa2">
+      <option name="closed" value="true" />
+      <created>1721472887101</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1721472887101</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +360,9 @@
     <MESSAGE value="v.0.3b(Alfa)" />
     <MESSAGE value="v.0.4" />
     <MESSAGE value="v.0.4b" />
+    <MESSAGE value="Merge remote-tracking branch 'master/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.pwrpl/.idea/workspace.xml&#10;#&#9;pwrpl/MainWindow.axaml.cs" />
     <MESSAGE value="v.0.5Alfa" />
-    <option name="LAST_COMMIT_MESSAGE" value="v.0.5Alfa" />
+    <MESSAGE value="v.0.5Alfa2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.0.5Alfa2" />
   </component>
 </project>
