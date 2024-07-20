@@ -6,7 +6,7 @@
         x:Class="pwrpl.EdytorTresci.UsuwanieZmiennych"
         Icon="../pwrpl.ico"
         Title=""
-        Width="1220" Height="800"
+        Width="1830" Height="800"
         MinWidth="800" MinHeight="600">
         
         
@@ -89,6 +89,29 @@
                             Margin="0,0,0,0"
                             VerticalAlignment="Top"
                         />
+                    </StackPanel>
+                
+                    <StackPanel>
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            Margin="0,60, 0, 0"
+                            FontFamily="SansSerif"
+                            FontSize="18"
+                            Text="usunięte zmienne:"
+                        />
+                        
+                        <TextBox 
+                            Name="edytor_usunietezmienne"
+                            IsReadOnly="True"
+                            Width="600"
+                            Height="560"
+                            TextWrapping="Wrap"
+                            FontFamily="SansSerif"
+                            FontSize="18"
+                            Margin="0,0,0,0"
+                            VerticalAlignment="Top"
+                        />
+
                     </StackPanel>
                     
                 </StackPanel>

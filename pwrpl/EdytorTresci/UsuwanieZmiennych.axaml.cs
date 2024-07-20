@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input;
@@ -17,7 +18,9 @@ public partial class UsuwanieZmiennych : Window
         InitializeComponent();
     }
 
-
+    private static List<string> listausunietychzmiennych_tmp = new List<string>();
+        
+        
     public static void OtworzOkno()
     {
         Dispatcher.UIThread.Post(() =>
@@ -31,16 +34,25 @@ public partial class UsuwanieZmiennych : Window
 
     private static string ZTresci(string tresc)
     {
+        /*
         tresc = PodmianaTekstuWTresci(tresc, @"<br>", "");
         tresc = PodmianaTekstuWTresci(tresc, @"\{g.*?\}", "");
         tresc = PodmianaTekstuWTresci(tresc, @"{/g}", "");
+        */
 
+        tresc = PodmianaTekstuWTresci(tresc, @"<br>|\{g.*?\}|{/g}", "");
+        
         string rezultat = tresc;
         return rezultat;
     }
 
     private static string PodmianaTekstuWTresci(string tresc, string wzorzectekstudopodmiany, string podmiana_na)
     {
+        Regex dopasowania_regex = new Regex(wzorzectekstudopodmiany);
+        foreach (Match match in Regex.Matches(tresc, wzorzectekstudopodmiany))
+        {
+            listausunietychzmiennych_tmp.Add(match.Value);
+        }        
         return Regex.Replace(tresc, wzorzectekstudopodmiany, podmiana_na);
     }
 
@@ -68,14 +80,37 @@ public partial class UsuwanieZmiennych : Window
     }
 
 
-    private static string Wykonaj()
+    private static void AktualizujTresc_w_TextBox_edytor_listausunietychzmiennych()
+    {
+        if (okno_edytora != null)
+        {
+            string listausunietychzmiennych_string = "";
+            for (int i = 0; i < listausunietychzmiennych_tmp.Count; i++)
+            {
+                string nowalinia = "\n";
+                if (i == 0) { nowalinia = ""; }
+                
+                listausunietychzmiennych_string = listausunietychzmiennych_string + nowalinia + listausunietychzmiennych_tmp[i];
+            }
+            
+            Dispatcher.UIThread.InvokeAsync(() =>
+            {
+                okno_edytora.edytor_usunietezmienne.Text = listausunietychzmiennych_string;
+            }).Wait();
+        }
+        
+        listausunietychzmiennych_tmp.Clear();
+
+    }
+
+
+    private static void Wykonaj()
     {
         string input = PobierzTresc_z_TextBox_edytor_input();
         string output = UsuwanieZmiennych.ZTresci(input);;
         
         AktualizujTresc_w_TextBox_edytor_output(output);
-
-        return output;
+        AktualizujTresc_w_TextBox_edytor_listausunietychzmiennych();
     }
     
     
