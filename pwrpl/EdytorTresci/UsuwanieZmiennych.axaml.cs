@@ -4,6 +4,7 @@ using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
+using System.Text.RegularExpressions;
 
 namespace pwrpl.EdytorTresci;
 
@@ -34,6 +35,11 @@ public partial class UsuwanieZmiennych : Window
             ;
 
         return rezultat;
+    }
+
+    private static void PodmianaTekstuWTresci(string tresc, string wzorzectekstudopodmiany, string podmiana_na)
+    {
+        
     }
 
     private static string PobierzTresc_z_TextBox_edytor_input()
