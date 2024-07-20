@@ -7,12 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="v.0.5">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="v.0.5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +62,7 @@
     &quot;Publish to folder.Linux x64.executor&quot;: &quot;Run&quot;,
     &quot;Publish to folder.Windows x64.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;experimental&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/revok/Pobrane/InterVariable.ttf&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -191,6 +186,7 @@
       <workItem from="1721496293917" duration="10500000" />
       <workItem from="1721507205122" duration="4280000" />
       <workItem from="1721512193775" duration="5220000" />
+      <workItem from="1722429344240" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="v.0.1">
       <option name="closed" value="true" />

@@ -33,7 +33,7 @@ public partial class UsuwanieZmiennych : Window
     private string ZTresci(string tresc)
     {
 
-        tresc = PodmianaTekstuWTresci(tresc, @"<br>|<b>|\{g.*?\}|{/g}", "");
+        tresc = PodmianaTekstuWTresci(tresc, @"<br>|<b>|</b>|\{g.*?\}|{/g}", "");
         
         string rezultat = tresc;
         return rezultat;

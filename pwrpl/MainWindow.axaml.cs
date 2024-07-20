@@ -28,7 +28,7 @@ namespace pwrpl;
 public partial class MainWindow : Window
 {
     public static readonly string _PWR_nazwaprogramu = "pwrpl";
-    public static readonly string _PWR_wersjaprogramu = "v.0.5";
+    public static readonly string _PWR_wersjaprogramu = "v.0.6(Alfa1)";
     public static readonly string _PWR_rokwydaniawersji = "2024";
 
     public static readonly string pwrpl_katalogglownyprogramu = Directory.GetCurrentDirectory();
@@ -474,12 +474,33 @@ public partial class MainWindow : Window
     
     private async void OknoKomunikatu_wyodrebnijplikiTXTiJSON()
     {
-        Komunikat.Okno.Otworz("Wyodrębnianie plików", "Pliki .txt i .json (oprócz metadanych) zostaną wyodrębnione z katalogu programu do nowego podkatalogu. Tym samym przestaną być widoczne przez narzędzia.\nCzy chcesz wykonać tę operację?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijPlikiTXTiJSON);
+        if (Console.pwrpltools_osobnywatek != null && Console.pwrplconverter_osobnywatek != null)
+        {
+            if (Console.pwrpltools_osobnywatek.IsAlive == false && Console.pwrplconverter_osobnywatek.IsAlive == false)
+            {
+                Okno.Otworz("Wyodrębnianie plików", "Pliki .txt i .json (oprócz metadanych) zostaną wyodrębnione z katalogu programu do nowego podkatalogu. Tym samym przestaną być widoczne przez narzędzia.\nCzy chcesz wykonać tę operację?", Okno.Zamknij, WyodrebnianiePlikow.WyodrebnijPlikiTXTiJSON);
+            }
+            else
+            {
+                Okno.Otworz("Wyodrębnianie plików", "Wyodrębnienie plików nie jest możliwe, ponieważ we wbudowanej konsoli uruchomione jest aktualnie narzędzie.");
+            }
+        }
     }
     
     private async void OknoKomunikatu_wyodrebnijmetadane()
     {
-        Komunikat.Okno.Otworz("Wyodrębnianie metadanych", "Metadane zostaną wyodrębnione z katalogu programu do nowego podkatalogu. Tym samym przestaną być widoczne przez pwrpl-converter.\nCzy chcesz wykonać tę operację?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijMetadane);
+        if (Console.pwrpltools_osobnywatek != null && Console.pwrplconverter_osobnywatek != null)
+        {
+            if (Console.pwrpltools_osobnywatek.IsAlive == false && Console.pwrplconverter_osobnywatek.IsAlive == false)
+            {
+                Komunikat.Okno.Otworz("Wyodrębnianie metadanych", "Metadane zostaną wyodrębnione z katalogu programu do nowego podkatalogu. Tym samym przestaną być widoczne przez pwrpl-converter.\nCzy chcesz wykonać tę operację?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijMetadane);
+            }
+            else
+            {
+                Okno.Otworz("Wyodrębnianie plików", "Wyodrębnienie plików nie jest możliwe, ponieważ we wbudowanej konsoli uruchomione jest aktualnie narzędzie.");
+            }
+        }
+
     }
 
     private void EdytorTresci_UsuwanieZmiennych_OtworzOkno()

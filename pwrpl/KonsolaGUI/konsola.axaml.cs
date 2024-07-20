@@ -63,8 +63,8 @@ public partial class Console : UserControl
     }
     private static int _konsola_aktualnailoscliniiwbuforze = 0;
 
-    public static Thread? pwrpltools_osobnywatek;
-    public static Thread? pwrplconverter_osobnywatek;
+    public static Thread? pwrpltools_osobnywatek = new Thread(Uruchom_pwrpltools);
+    public static Thread? pwrplconverter_osobnywatek = new Thread(Uruchom_pwrplconverter);
     
     //public static List<Narzedzie> uruchomione_narzedzia = new List<Narzedzie>();
     
@@ -108,20 +108,27 @@ public partial class Console : UserControl
         }
     }
 
+    
     private static void ZainicjalizujWatekDla_pwrpltools()
     {
-        pwrpltools_osobnywatek = new Thread(Uruchom_pwrpltools);
-        pwrpltools_osobnywatek.Start();
+        if (pwrpltools_osobnywatek != null)
+        {
+            pwrpltools_osobnywatek = new Thread(Uruchom_pwrpltools); //konieczne tworzenie nowej instancji wątku, aby było możliwe ponowne uruchomienie narzędzia po jego zamknięciu bez zwrócenia błędu: Unhandled exception. System.Threading.ThreadStateException: Thread is running or terminated; it cannot restart. 
+            pwrpltools_osobnywatek.Start();
         
-        PanelWprowadzania_Wyswietlanie(true);
+            PanelWprowadzania_Wyswietlanie(true);
+        }
     }
 
     private static void ZainicjalizujWatekDla_pwrplconverter()
     {
-        pwrplconverter_osobnywatek = new Thread(Uruchom_pwrplconverter);
-        pwrplconverter_osobnywatek.Start();
+        if (pwrplconverter_osobnywatek != null)
+        {
+            pwrplconverter_osobnywatek = new Thread(Uruchom_pwrplconverter); //konieczne tworzenie nowej instancji wątku, aby było możliwe ponowne uruchomienie narzędzia po jego zamknięciu bez zwrócenia błędu: Unhandled exception. System.Threading.ThreadStateException: Thread is running or terminated; it cannot restart. 
+            pwrplconverter_osobnywatek.Start();
         
-        PanelWprowadzania_Wyswietlanie(true);
+            PanelWprowadzania_Wyswietlanie(true);
+        }
     }
 
     private static void Uruchom_pwrpltools()
