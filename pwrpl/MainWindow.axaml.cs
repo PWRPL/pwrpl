@@ -48,6 +48,7 @@ public partial class MainWindow : Window
 
     public static Thread? konsolaGUI_osobnywatek;
     
+    
     public MainWindow()
     {
         
@@ -483,7 +484,9 @@ public partial class MainWindow : Window
 
     private void EdytorTresci_UsuwanieZmiennych_OtworzOkno()
     {
-        pwrpl.EdytorTresci.UsuwanieZmiennych.OtworzOkno();
+        var okno_edytora = new UsuwanieZmiennych();
+        okno_edytora.Show();
     }
+    
 }
 

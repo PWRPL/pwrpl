@@ -16,32 +16,73 @@
               Width=""
               Height=""
         >
-            <StackPanel Orientation="Horizontal">
-                <StackPanel>
-                    <Button 
-                            Name="edytor_button_wklejzeschowkanawejscie"
-                            Content="Wklej treść ze schowka na wejście"
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            Width="600"
-                            Height="40"
-                            FontSize="18"
-                            HorizontalAlignment="Left"
-                            VerticalAlignment="Top"
-                            Click="WklejTrescZeSchowkaNaWejscie_Button_OnClick"
-                                
-                            IsVisible="True"
-                    />
-                        <TextBlock 
-                            HorizontalAlignment="Center"
-                            Margin="0,10"
-                            FontFamily="SansSerif"
-                            FontSize="18"
-                            Text="wejście:"
-                        />
-                        <TextBox 
-                                Name="edytor_input"
-                                IsReadOnly="False"
+            
+            <StackPanel>
+                <Button 
+                    Name="edytor_button_automatyczniezaktualizujtrescschowkatresciazusunietymizmiennymi"
+                    Content="Pobranie treści ze schowka, usunięcie zmiennych, a następnie zaktualizowanie treści w schowku"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Width="1200"
+                    Height="40"
+                    FontSize="18"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="AutomatycznieZaktualizujTrescSchowkaTresciaZUsunietymiZmiennymi_Button_OnClick"
+                            
+                    IsVisible="True"
+                />
+
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                            <TextBlock 
+                                HorizontalAlignment="Center"
+                                Margin="0,10"
+                                FontFamily="SansSerif"
+                                FontSize="18"
+                                Text="wejście:"
+                            />
+                            <TextBox 
+                                    Name="edytor_input"
+                                    IsReadOnly="False"
+                                    Width="600"
+                                    Height="560"
+                                    TextWrapping="Wrap"
+                                    FontFamily="SansSerif"
+                                    FontSize="18"
+                                    Margin="0,0,0,0"
+                                    VerticalAlignment="Top"
+                                    TextChanged="Edytor_input_OnTextChanged"
+                                    AcceptsReturn="True"
+                            />
+                            <Button 
+                                Name="edytor_button_wklejzeschowkanawejscie"
+                                Content="Wklejenie treści ze schowka na wejście"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                Width="600"
+                                Height="40"
+                                FontSize="18"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Click="WklejTrescZeSchowkaNaWejscie_Button_OnClick"
+                                    
+                                IsVisible="True"
+                            />
+                        </StackPanel>
+                        
+                        <StackPanel>
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                Margin="0,10"
+                                FontFamily="SansSerif"
+                                FontSize="18"
+                                Text="wyjście:"
+                            />
+
+                            <TextBox 
+                                Name="edytor_output"
+                                IsReadOnly="True"
                                 Width="600"
                                 Height="560"
                                 TextWrapping="Wrap"
@@ -49,73 +90,48 @@
                                 FontSize="18"
                                 Margin="0,0,0,0"
                                 VerticalAlignment="Top"
-                                TextChanged="Edytor_input_OnTextChanged"
-                                AcceptsReturn="True"
-                        />
-                    </StackPanel>
+                            />
+                            <Button 
+                                Name="edytor_button_skopiujtresczwyjsciadoschowka"
+                                Content="Skopiowanie treści z wyjścia do schowka"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                Width="600"
+                                Height="40"
+                                FontSize="18"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Click="SkopiujTrescZWyjsciaDoSchowka_Button_OnClick"
+                                
+                                IsVisible="True"
+                            />
+                        </StackPanel>
                     
-                    <StackPanel>
-                        <Button 
-                            Name="edytor_button_skopiujtresczwyjsciadoschowka"
-                            Content="Skopiuj treść z wyjścia do schowka"
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            Width="600"
-                            Height="40"
-                            FontSize="18"
-                            HorizontalAlignment="Left"
-                            VerticalAlignment="Top"
-                            Click="SkopiujTrescZWyjsciaDoSchowka_Button_OnClick"
+                        <StackPanel>
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                Margin="0,10"
+                                FontFamily="SansSerif"
+                                FontSize="18"
+                                Text="usunięte zmienne:"
+                            />
                             
-                            IsVisible="True"
-                        />
-
-                        <TextBlock
-                            HorizontalAlignment="Center"
-                            Margin="0,10"
-                            FontFamily="SansSerif"
-                            FontSize="18"
-                            Text="wyjście:"
-                        />
-
-                        <TextBox 
-                            Name="edytor_output"
-                            IsReadOnly="True"
-                            Width="600"
-                            Height="560"
-                            TextWrapping="Wrap"
-                            FontFamily="SansSerif"
-                            FontSize="18"
-                            Margin="0,0,0,0"
-                            VerticalAlignment="Top"
-                        />
-                    </StackPanel>
-                
-                    <StackPanel>
-                        <TextBlock
-                            HorizontalAlignment="Center"
-                            Margin="0,60, 0, 0"
-                            FontFamily="SansSerif"
-                            FontSize="18"
-                            Text="usunięte zmienne:"
-                        />
+                            <TextBox 
+                                Name="edytor_usunietezmienne"
+                                IsReadOnly="True"
+                                Width="600"
+                                Height="560"
+                                TextWrapping="Wrap"
+                                FontFamily="SansSerif"
+                                FontSize="18"
+                                Margin="0,0,0,0"
+                                VerticalAlignment="Top"
+                            />
+                        </StackPanel>
                         
-                        <TextBox 
-                            Name="edytor_usunietezmienne"
-                            IsReadOnly="True"
-                            Width="600"
-                            Height="560"
-                            TextWrapping="Wrap"
-                            FontFamily="SansSerif"
-                            FontSize="18"
-                            Margin="0,0,0,0"
-                            VerticalAlignment="Top"
-                        />
-
-                    </StackPanel>
-                    
                 </StackPanel>
-            
+            </StackPanel>
+
             
             
             

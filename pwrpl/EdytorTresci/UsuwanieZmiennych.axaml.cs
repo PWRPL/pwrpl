@@ -6,47 +6,40 @@ using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace pwrpl.EdytorTresci;
 
 public partial class UsuwanieZmiennych : Window
 {
-    public static UsuwanieZmiennych? okno_edytora { get; set; }
-    
+    private UsuwanieZmiennych? okno_edytora { get; set; }
+
     public UsuwanieZmiennych()
     {
         InitializeComponent();
+        
+        Title = $"{MainWindow._PWR_nazwaprogramu} {MainWindow._PWR_wersjaprogramu} by Revok ({MainWindow._PWR_rokwydaniawersji}) / Edytor treści / Usuwanie zmiennych";
+        edytor_input.Text = "";
+
+        okno_edytora = this; 
+
     }
 
-    private static List<string> listausunietychzmiennych_tmp = new List<string>();
+    private List<string> listausunietychzmiennych_tmp = new List<string>();
         
-        
-    public static void OtworzOkno()
-    {
-        Dispatcher.UIThread.Post(() =>
-        {
-            okno_edytora = new UsuwanieZmiennych();
-            okno_edytora.Title = $"{MainWindow._PWR_nazwaprogramu} {MainWindow._PWR_wersjaprogramu} by Revok ({MainWindow._PWR_rokwydaniawersji}) / Edytor treści / Usuwanie zmiennych";
-            okno_edytora.edytor_input.Text = "";
-            okno_edytora.Show();
-        });
-    }
+    
+    
 
-    private static string ZTresci(string tresc)
+    private string ZTresci(string tresc)
     {
-        /*
-        tresc = PodmianaTekstuWTresci(tresc, @"<br>", "");
-        tresc = PodmianaTekstuWTresci(tresc, @"\{g.*?\}", "");
-        tresc = PodmianaTekstuWTresci(tresc, @"{/g}", "");
-        */
 
-        tresc = PodmianaTekstuWTresci(tresc, @"<br>|\{g.*?\}|{/g}", "");
+        tresc = PodmianaTekstuWTresci(tresc, @"<br>|<b>|\{g.*?\}|{/g}", "");
         
         string rezultat = tresc;
         return rezultat;
     }
 
-    private static string PodmianaTekstuWTresci(string tresc, string wzorzectekstudopodmiany, string podmiana_na)
+    private string PodmianaTekstuWTresci(string tresc, string wzorzectekstudopodmiany, string podmiana_na)
     {
         Regex dopasowania_regex = new Regex(wzorzectekstudopodmiany);
         foreach (Match match in Regex.Matches(tresc, wzorzectekstudopodmiany))
@@ -56,11 +49,11 @@ public partial class UsuwanieZmiennych : Window
         return Regex.Replace(tresc, wzorzectekstudopodmiany, podmiana_na);
     }
 
-    private static string PobierzTresc_z_TextBox_edytor_input()
+    private string PobierzTresc_z_TextBox_edytor_input()
     {
         string rezultat = "";
         
-        if (okno_edytora != null)
+        if (this.okno_edytora != null)
         {
             Dispatcher.UIThread.InvokeAsync(() => { rezultat = okno_edytora.edytor_input.Text; }).Wait();
         }
@@ -68,7 +61,7 @@ public partial class UsuwanieZmiennych : Window
         return rezultat;
     }
     
-    private static void AktualizujTresc_w_TextBox_edytor_output(string nowa_tresc)
+    private void AktualizujTresc_w_TextBox_edytor_output(string nowa_tresc)
     {
         if (okno_edytora != null)
         {
@@ -80,7 +73,7 @@ public partial class UsuwanieZmiennych : Window
     }
 
 
-    private static void AktualizujTresc_w_TextBox_edytor_listausunietychzmiennych()
+    private void AktualizujTresc_w_TextBox_edytor_listausunietychzmiennych()
     {
         if (okno_edytora != null)
         {
@@ -104,24 +97,20 @@ public partial class UsuwanieZmiennych : Window
     }
 
 
-    private static void Wykonaj()
+    private void Wykonaj()
     {
         string input = PobierzTresc_z_TextBox_edytor_input();
-        string output = UsuwanieZmiennych.ZTresci(input);;
+        string output = ZTresci(input);;
         
         AktualizujTresc_w_TextBox_edytor_output(output);
         AktualizujTresc_w_TextBox_edytor_listausunietychzmiennych();
     }
     
     
-    private void Edytor_input_OnTextChanged(object? sender, TextChangedEventArgs e)
-    {
-        Wykonaj();
-    }
 
-    private async void WklejTrescZeSchowkaNaWejscie_Button_OnClick(object? sender, RoutedEventArgs e)
+    private async Task WklejTrescZeSchowkaNaWejscie()
     {
-        if (okno_edytora != null)
+        if (this.okno_edytora != null)
         {
             var tresc_schowka_IClipboard = this.Clipboard;
             
@@ -134,9 +123,12 @@ public partial class UsuwanieZmiennych : Window
             this.edytor_input.Text = tresc_schowka;
             
         }
-    }
 
-    private async void SkopiujTrescZWyjsciaDoSchowka_Button_OnClick(object? sender, RoutedEventArgs e)
+    }
+    
+    
+
+    private async Task SkopiujTrescZWyjsciaDoSchowka()
     {
         if (okno_edytora != null && okno_edytora.Clipboard != null)
         {
@@ -155,5 +147,36 @@ public partial class UsuwanieZmiennych : Window
                 okno_edytora.Clipboard.SetTextAsync(output);
             });
         }
+
     }
+    
+    private async void AutomatycznieZaktualizujTrescSchowkaTresciaZUsunietymiZmiennymi_Button_OnClick(object? sender, RoutedEventArgs e)
+    {
+        #if DEBUG
+            System.Console.WriteLine("[DEBUG] Wejście w: AutomatycznieZaktualizujTrescSchowkaTresciaZUsunietymiZmiennymi_Button_OnClick");
+        #endif
+        
+        await WklejTrescZeSchowkaNaWejscie();
+        Wykonaj();
+        await SkopiujTrescZWyjsciaDoSchowka();
+
+    }
+
+
+    private async void WklejTrescZeSchowkaNaWejscie_Button_OnClick(object? sender, RoutedEventArgs e)
+    {
+        WklejTrescZeSchowkaNaWejscie();
+    }
+
+    private async void SkopiujTrescZWyjsciaDoSchowka_Button_OnClick(object? sender, RoutedEventArgs e)
+    {
+        SkopiujTrescZWyjsciaDoSchowka();
+    }
+
+    
+    private void Edytor_input_OnTextChanged(object? sender, TextChangedEventArgs e)
+    {
+        Wykonaj();
+    }
+
 }
