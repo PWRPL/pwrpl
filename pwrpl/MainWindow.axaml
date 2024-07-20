@@ -65,6 +65,12 @@
 
                 
                 
+                <MenuItem x:Name="menu_edytortresci" Header="Edytor treści" Width="200" Height="40" FontSize="18" Background="#764A4646" Foreground="#7FFFFFFF">
+                    <MenuItem x:Name="menu_edytortresci_usuwaniezmiennych" Width="200" Height="40" FontSize="18" Header="Usuń zmienne" Click="Menu_edytortresci_usuwaniezmiennych_OnClick" />
+                </MenuItem>
+
+                
+                
                 <MenuItem x:Name="menu_debug" Header="debug" Width="200" Height="40" FontSize="18" Background="#764A4646" Foreground="#7FFFFFFF" IsVisible="False">
                     <MenuItem x:Name="menu_debug_test" Width="200" Height="40" FontSize="18" Header="test" />
                 </MenuItem>

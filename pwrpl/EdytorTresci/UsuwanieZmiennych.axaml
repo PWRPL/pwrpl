@@ -1,0 +1,75 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+        x:Class="pwrpl.EdytorTresci.UsuwanieZmiennych"
+        Icon="../pwrpl.ico"
+        Title=""
+        Width="1220" Height="800"
+        MinWidth="800" MinHeight="600">
+        
+        
+    <Grid x:Name="siatka_glowna" Margin="5" Background="#764A4646">
+        
+        <Grid Name="edytor_siatkaglowna"
+              Width=""
+              Height=""
+        >
+            <StackPanel>
+                <Button 
+                        Name="edytor_button_przetworztrescwschowku"
+                        Content="Przetwórz treść w schowku"
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        Width="300"
+                        Height="40"
+                        FontSize="18"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Click="PrzetworzTrescWSchowku_Button_OnClick"
+                        
+                        IsVisible="True"
+                    />
+
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBox 
+                        Name="edytor_input"
+                        IsReadOnly="False"
+                        Width="600"
+                        Height="560"
+                        TextWrapping="Wrap"
+                        FontFamily="Arial"
+                        FontSize="18"
+                        Margin="0,0,0,0"
+                        VerticalAlignment="Top"
+                        TextChanged="Edytor_input_OnTextChanged"
+                        AcceptsReturn="True"
+                    />
+                    
+                    <TextBox 
+                        Name="edytor_output"
+                        IsReadOnly="True"
+                        Width="600"
+                        Height="560"
+                        TextWrapping="Wrap"
+                        FontFamily="Arial"
+                        FontSize="18"
+                        Margin="0,0,0,0"
+                        VerticalAlignment="Top"
+                    />
+                </StackPanel>
+            </StackPanel>
+            
+            
+            
+        </Grid>
+                
+        
+        
+    </Grid>
+
+        
+        
+</Window>

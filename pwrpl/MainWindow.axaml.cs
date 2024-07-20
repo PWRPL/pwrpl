@@ -18,6 +18,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Styling;
 using JSON;
 using Newtonsoft.Json.Linq;
+using pwrpl.EdytorTresci;
 using pwrpl.Identyfikacja;
 using pwrpl.Komunikat;
 
@@ -26,9 +27,9 @@ namespace pwrpl;
 
 public partial class MainWindow : Window
 {
-    public const string _PWR_nazwaprogramu = "pwrpl";
-    public const string _PWR_wersjaprogramu = "v.0.4b";
-    public const string _PWR_rokwydaniawersji = "2024";
+    public static readonly string _PWR_nazwaprogramu = "pwrpl";
+    public static readonly string _PWR_wersjaprogramu = "v.0.5Alfa";
+    public static readonly string _PWR_rokwydaniawersji = "2024";
 
     public static readonly string pwrpl_katalogglownyprogramu = Directory.GetCurrentDirectory();
 
@@ -463,6 +464,12 @@ public partial class MainWindow : Window
     }
 
     
+    private void Menu_edytortresci_usuwaniezmiennych_OnClick(object? sender, RoutedEventArgs e)
+    {
+        EdytorTresci_UsuwanieZmiennych_OtworzOkno();
+    }
+
+    
     
     private async void OknoKomunikatu_wyodrebnijplikiTXTiJSON()
     {
@@ -474,5 +481,9 @@ public partial class MainWindow : Window
         Komunikat.Okno.Otworz("Wyodrębnianie metadanych", "Metadane zostaną wyodrębnione z katalogu programu do nowego podkatalogu. Tym samym przestaną być widoczne przez pwrpl-converter.\nCzy chcesz wykonać tę operację?", pwrpl.Komunikat.Okno.Zamknij, pwrpl.WyodrebnianiePlikow.WyodrebnijMetadane);
     }
 
+    private void EdytorTresci_UsuwanieZmiennych_OtworzOkno()
+    {
+        pwrpl.EdytorTresci.UsuwanieZmiennych.OtworzOkno();
+    }
 }
 
