@@ -22,7 +22,7 @@ public partial class UsuwanieZmiennych : Window
         {
             okno_edytora = new UsuwanieZmiennych();
             okno_edytora.Title = $"{MainWindow._PWR_nazwaprogramu} {MainWindow._PWR_wersjaprogramu} by Revok ({MainWindow._PWR_rokwydaniawersji}) / Edytor treści / Usuwanie zmiennych";
-            okno_edytora.edytor_input.Text = ""; // musi być domyślnie zdefiniowane jako ""
+            okno_edytora.edytor_input.Text = "";
             okno_edytora.Show();
         });
     }
@@ -60,14 +60,13 @@ public partial class UsuwanieZmiennych : Window
     }
 
 
-    private static string Wykonaj()
+    private static void Wykonaj()
     {
         string input = PobierzTresc_z_TextBox_edytor_input();
         string output = UsuwanieZmiennych.ZTresci(input);;
         
         AktualizujTresc_w_TextBox_edytor_output(output);
-
-        return output;
+        
     }
     
     
@@ -81,21 +80,17 @@ public partial class UsuwanieZmiennych : Window
         if (okno_edytora != null)
         {
             var tresc_schowka_IClipboard = this.Clipboard;
-
             
-                string tresc_zaktualizowana = "";
+            string tresc_schowka = await tresc_schowka_IClipboard.GetTextAsync();
+            if (tresc_schowka == null)
+            {
+                tresc_schowka = "";
+            }
 
-                tresc_zaktualizowana = PobierzTresc_z_TextBox_edytor_input();
-
-                string tresc_schowka = await tresc_schowka_IClipboard.GetTextAsync();
-                if (tresc_schowka != null)
-                {
-                    this.edytor_input.Text = tresc_schowka;
-                    var obiekt = new DataObject();
-                    obiekt.Set(DataFormats.Text, tresc_zaktualizowana);
-                    await tresc_schowka_IClipboard.SetDataObjectAsync(obiekt);
-                }
-
+            this.edytor_input.Text = tresc_schowka;
+                var obiekt = new DataObject();
+                obiekt.Set(DataFormats.Text, tresc_schowka);
+                await tresc_schowka_IClipboard.SetDataObjectAsync(obiekt);
             
         }
     }

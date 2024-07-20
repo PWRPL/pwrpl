@@ -7,12 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="v.0.5Alfa">
-      <change afterPath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml.cs" afterDir="false" />
+    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pwrpl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/EdytorTresci/UsuwanieZmiennych.axaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +22,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -182,7 +179,8 @@
       <workItem from="1720431963655" duration="21000" />
       <workItem from="1720432010512" duration="329000" />
       <workItem from="1720527255108" duration="1171000" />
-      <workItem from="1721437319499" duration="14743000" />
+      <workItem from="1721437319499" duration="14848000" />
+      <workItem from="1721470905674" duration="1634000" />
     </task>
     <task id="LOCAL-00001" summary="v.0.1">
       <option name="closed" value="true" />
@@ -328,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721452063297</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="v.0.5Alfa">
+      <option name="closed" value="true" />
+      <created>1721452159902</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1721452159902</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +356,7 @@
     <MESSAGE value="v.0.3b(Alfa)" />
     <MESSAGE value="v.0.4" />
     <MESSAGE value="v.0.4b" />
+    <MESSAGE value="Merge remote-tracking branch 'master/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.pwrpl/.idea/workspace.xml&#10;#&#9;pwrpl/MainWindow.axaml.cs" />
     <MESSAGE value="v.0.5Alfa" />
     <option name="LAST_COMMIT_MESSAGE" value="v.0.5Alfa" />
   </component>

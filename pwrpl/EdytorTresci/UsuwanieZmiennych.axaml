@@ -34,32 +34,53 @@
 
                 
                 <StackPanel Orientation="Horizontal">
-                    <TextBox 
-                        Name="edytor_input"
-                        IsReadOnly="False"
-                        Width="600"
-                        Height="560"
-                        TextWrapping="Wrap"
-                        FontFamily="Arial"
-                        FontSize="18"
-                        Margin="0,0,0,0"
-                        VerticalAlignment="Top"
-                        TextChanged="Edytor_input_OnTextChanged"
-                        AcceptsReturn="True"
-                    />
+                    <StackPanel>
+                        <TextBlock 
+                            HorizontalAlignment="Center"
+                            Margin="0,10"
+                            FontFamily="Arial"
+                            FontSize="18"
+                            Text="wejście:"
+                        />
+                        <TextBox 
+                                Name="edytor_input"
+                                IsReadOnly="False"
+                                Width="600"
+                                Height="560"
+                                TextWrapping="Wrap"
+                                FontFamily="Arial"
+                                FontSize="18"
+                                Margin="0,0,0,0"
+                                VerticalAlignment="Top"
+                                TextChanged="Edytor_input_OnTextChanged"
+                                AcceptsReturn="True"
+                        />
+                    </StackPanel>
                     
-                    <TextBox 
-                        Name="edytor_output"
-                        IsReadOnly="True"
-                        Width="600"
-                        Height="560"
-                        TextWrapping="Wrap"
-                        FontFamily="Arial"
-                        FontSize="18"
-                        Margin="0,0,0,0"
-                        VerticalAlignment="Top"
-                    />
+                    <StackPanel>
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            Margin="0,10"
+                            FontFamily="Arial"
+                            FontSize="18"
+                            Text="wyjście:"
+                        />
+
+                        <TextBox 
+                            Name="edytor_output"
+                            IsReadOnly="True"
+                            Width="600"
+                            Height="560"
+                            TextWrapping="Wrap"
+                            FontFamily="Arial"
+                            FontSize="18"
+                            Margin="0,0,0,0"
+                            VerticalAlignment="Top"
+                        />
+                    </StackPanel>
+                    
                 </StackPanel>
+                
             </StackPanel>
             
             
