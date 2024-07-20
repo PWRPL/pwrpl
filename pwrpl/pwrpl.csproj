@@ -41,6 +41,8 @@
       <AvaloniaResource Include="pwrpl.ttf" />
       <None Remove="pwrpl.ico" />
       <AvaloniaResource Include="pwrpl.ico" />
+      <None Remove="transifex.ttf" />
+      <None Remove="InterVariable.ttf" />
     </ItemGroup>
 
     <ItemGroup>

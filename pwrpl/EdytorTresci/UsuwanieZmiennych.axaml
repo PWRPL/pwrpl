@@ -16,29 +16,26 @@
               Width=""
               Height=""
         >
-            <StackPanel>
-                <Button 
-                        Name="edytor_button_przetworztrescwschowku"
-                        Content="Przetwórz treść w schowku"
-                        HorizontalContentAlignment="Center"
-                        VerticalContentAlignment="Center"
-                        Width="300"
-                        Height="40"
-                        FontSize="18"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
-                        Click="PrzetworzTrescWSchowku_Button_OnClick"
-                        
-                        IsVisible="True"
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <Button 
+                            Name="edytor_button_wklejzeschowkanawejscie"
+                            Content="Wklej treść ze schowka na wejście"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Width="600"
+                            Height="40"
+                            FontSize="18"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="WklejTrescZeSchowkaNaWejscie_Button_OnClick"
+                                
+                            IsVisible="True"
                     />
-
-                
-                <StackPanel Orientation="Horizontal">
-                    <StackPanel>
                         <TextBlock 
                             HorizontalAlignment="Center"
                             Margin="0,10"
-                            FontFamily="Arial"
+                            FontFamily="SansSerif"
                             FontSize="18"
                             Text="wejście:"
                         />
@@ -48,7 +45,7 @@
                                 Width="600"
                                 Height="560"
                                 TextWrapping="Wrap"
-                                FontFamily="Arial"
+                                FontFamily="SansSerif"
                                 FontSize="18"
                                 Margin="0,0,0,0"
                                 VerticalAlignment="Top"
@@ -58,10 +55,25 @@
                     </StackPanel>
                     
                     <StackPanel>
+                        <Button 
+                            Name="edytor_button_skopiujtresczwyjsciadoschowka"
+                            Content="Skopiuj treść z wyjścia do schowka"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Width="600"
+                            Height="40"
+                            FontSize="18"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="SkopiujTrescZWyjsciaDoSchowka_Button_OnClick"
+                            
+                            IsVisible="True"
+                        />
+
                         <TextBlock
                             HorizontalAlignment="Center"
                             Margin="0,10"
-                            FontFamily="Arial"
+                            FontFamily="SansSerif"
                             FontSize="18"
                             Text="wyjście:"
                         />
@@ -72,7 +84,7 @@
                             Width="600"
                             Height="560"
                             TextWrapping="Wrap"
-                            FontFamily="Arial"
+                            FontFamily="SansSerif"
                             FontSize="18"
                             Margin="0,0,0,0"
                             VerticalAlignment="Top"
@@ -80,8 +92,7 @@
                     </StackPanel>
                     
                 </StackPanel>
-                
-            </StackPanel>
+            
             
             
             

@@ -17,6 +17,7 @@ public partial class UsuwanieZmiennych : Window
         InitializeComponent();
     }
 
+
     public static void OtworzOkno()
     {
         Dispatcher.UIThread.Post(() =>
@@ -30,16 +31,17 @@ public partial class UsuwanieZmiennych : Window
 
     private static string ZTresci(string tresc)
     {
-        string rezultat = tresc
-            .Replace("<br>", "")
-            ;
+        tresc = PodmianaTekstuWTresci(tresc, @"<br>", "");
+        tresc = PodmianaTekstuWTresci(tresc, @"\{g.*?\}", "");
+        tresc = PodmianaTekstuWTresci(tresc, @"{/g}", "");
 
+        string rezultat = tresc;
         return rezultat;
     }
 
-    private static void PodmianaTekstuWTresci(string tresc, string wzorzectekstudopodmiany, string podmiana_na)
+    private static string PodmianaTekstuWTresci(string tresc, string wzorzectekstudopodmiany, string podmiana_na)
     {
-        
+        return Regex.Replace(tresc, wzorzectekstudopodmiany, podmiana_na);
     }
 
     private static string PobierzTresc_z_TextBox_edytor_input()
@@ -66,13 +68,14 @@ public partial class UsuwanieZmiennych : Window
     }
 
 
-    private static void Wykonaj()
+    private static string Wykonaj()
     {
         string input = PobierzTresc_z_TextBox_edytor_input();
         string output = UsuwanieZmiennych.ZTresci(input);;
         
         AktualizujTresc_w_TextBox_edytor_output(output);
-        
+
+        return output;
     }
     
     
@@ -81,7 +84,7 @@ public partial class UsuwanieZmiennych : Window
         Wykonaj();
     }
 
-    private async void PrzetworzTrescWSchowku_Button_OnClick(object? sender, RoutedEventArgs e)
+    private async void WklejTrescZeSchowkaNaWejscie_Button_OnClick(object? sender, RoutedEventArgs e)
     {
         if (okno_edytora != null)
         {
@@ -94,10 +97,28 @@ public partial class UsuwanieZmiennych : Window
             }
 
             this.edytor_input.Text = tresc_schowka;
-                var obiekt = new DataObject();
-                obiekt.Set(DataFormats.Text, tresc_schowka);
-                await tresc_schowka_IClipboard.SetDataObjectAsync(obiekt);
             
+        }
+    }
+
+    private async void SkopiujTrescZWyjsciaDoSchowka_Button_OnClick(object? sender, RoutedEventArgs e)
+    {
+        if (okno_edytora != null && okno_edytora.Clipboard != null)
+        {
+            string output = "";
+            
+            Dispatcher.UIThread.InvokeAsync(() =>
+            {
+                if (okno_edytora.edytor_output.Text != null)
+                {
+                    output = okno_edytora.edytor_output.Text;
+                }
+            }).Wait();
+            
+            Dispatcher.UIThread.Post(() =>
+            {
+                okno_edytora.Clipboard.SetTextAsync(output);
+            });
         }
     }
 }
