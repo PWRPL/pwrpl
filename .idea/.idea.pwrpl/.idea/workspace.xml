@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="v.0.5" />
+    <list default="true" id="0c2e35ba-6e6b-4b67-af52-ebc8f1e9b2d5" name="Changes" comment="v.0.5">
+      <change beforePath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/pwrpl-tools/PWR_PL.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/pwrpl-tools/PWR_PL.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwrpl/pwrpl-tools/pwrpltools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/pwrpl/pwrpl-tools/pwrpltools.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,6 +191,7 @@
       <workItem from="1721507205122" duration="4280000" />
       <workItem from="1721512193775" duration="5220000" />
       <workItem from="1722429344240" duration="9000" />
+      <workItem from="1722975770014" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="v.0.1">
       <option name="closed" value="true" />

@@ -29,7 +29,7 @@ namespace pwrpl_tools
     class pwrpltools
     {
         public const string _PWR_nazwaprogramu = "pwrpl-tools";
-        public const string _PWR_wersjaprogramu = "v.2.04";
+        public const string _PWR_wersjaprogramu = "v.2.05";
         public const string _PWR_rokwydaniawersji = "2024";
 
         internal readonly static bool wylacz_calkowitepokazywaniepostepow = true; //ustawienie na true przyspiesza operacje w KonsoliGUI (zaimplementowane w operacjach nr. 1, 2, 101)

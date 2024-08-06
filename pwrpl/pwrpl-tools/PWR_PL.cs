@@ -1595,6 +1595,11 @@ namespace pwrpl_tools
                         StreamReader plikzrodlowy_sr = new StreamReader(plikzrodlowy_fs);
                         StreamWriter nowyplik_sw = new StreamWriter(nowyplik_fs);
 
+                        if (wylacz_calkowitepokazywaniepostepow == true)
+                        {
+                            Console.WriteLine("Trwa usuwanie polskich znaków z linii. Może to chwilę zająć. Proszę czekać...");
+                        }
+                        
                         int plikzrodlowy_numerlinii = 1;
                         while (plikzrodlowy_sr.Peek() != -1)
                         {
@@ -1629,7 +1634,10 @@ namespace pwrpl_tools
                                 nowyplik_sw.Write(uaktualniona_linia);
                             }
 
-                            Console.WriteLine("Trwa zapisywanie linii nr.: " + plikzrodlowy_numerlinii + "/" + plikzrodlowy_liczbalinii + " [" + PoliczPostepWProcentach(plikzrodlowy_numerlinii, plikzrodlowy_liczbalinii) + "%]");
+                            if (wylacz_calkowitepokazywaniepostepow == false)
+                            {
+                                Console.WriteLine("Trwa zapisywanie linii nr.: " + plikzrodlowy_numerlinii + "/" + plikzrodlowy_liczbalinii + " [" + PoliczPostepWProcentach(plikzrodlowy_numerlinii, plikzrodlowy_liczbalinii) + "%]");
+                            }
 
                             plikzrodlowy_numerlinii++;
 
